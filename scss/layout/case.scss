@@ -1,0 +1,544 @@
+.case-study{
+    .case-study-wrap{
+        &:nth-child(2){
+            .logo-wrap{
+                @include flex;
+            }
+        }
+        
+        .case-study-image{
+            min-height: 100%;
+            @include flexcenter;
+            align-items: center;
+            .figure-case-img{
+                position: relative;
+                margin-bottom: 0 !important;
+                img{
+                    width:  400px;
+                }
+                &.left-img-sphere{
+                    .orange{
+                        bottom: -8px;
+                        left: -50px;
+                    }
+                    .pink{
+                       right: 0;
+                        top: -25px;
+                    }
+                    .sm-orange{
+                        right: 70px;
+                        top: -20px;
+                    }
+                    .sm-pink{
+                        bottom: 75px;
+                        left: -20px;
+                    }
+                }
+                &.right-img-sphere{
+                    .orange{
+                        bottom: 25px;
+                        left: -20px;
+                    }
+                    .pink{
+                        right: -35px;
+                        top: -50px;
+                    }
+                    .sm-orange{
+                        right: 50px;
+                        top: -15px;
+                    }
+                    .sm-pink{
+                        bottom: 105px;
+                        left: -22px;
+                    }
+                }
+                .bg-case-front{
+                    position: absolute;
+                    z-index: 1;
+                }
+                .bg-case{
+                    position: absolute;
+                    z-index: -1;
+                }
+                .orange{
+                    width: 271px;
+                    height: 267px;
+                }
+                .pink{
+                    width: 314px;
+                    height: 310px;
+                }
+                .sm-orange, .sm-pink{
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+        }
+        .case-study-content{ 
+            min-height: 100%;
+            @include flexcenter;
+            align-items: center;
+            .case-study-content-wrap{
+                .collab-group{
+                    span{
+                        padding-bottom: 1.406rem;
+                    }
+                    .collab-row{
+                        &:last-child{
+                            margin-top: 1.5rem;
+                        }
+                        .collab-span{
+                            span{
+                                padding-bottom: 5px;
+                                &.org-caption{
+                                    padding-top: 3px;
+                                    padding-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                span{
+                    display: block;
+                    padding-bottom: 1.172rem;
+                }
+                h3{
+                    margin-bottom: 1.406rem;
+                    max-width: 640px;
+                    &.proj-headline{
+                        margin-bottom: 0;
+                    }
+                }
+                p{
+                    max-width: 470px;
+                    margin-bottom: 1.641rem;
+                }
+                .caption{
+                    display: block;
+                    display: block;
+                    padding-bottom: .656rem;
+                }
+                .img-wrap{
+                    .sub-span-img{
+                        width: 147px;
+                        display: block;
+                    }
+                }
+                .btn-case{
+                    margin-top: 3.375rem;
+                    width: 142px;
+                    padding: .656rem 0;
+                    text-transform: capitalize;
+                    font-size: 0.625rem;
+                    @include typo($font-family, 400, 1.5);
+                    @include btn($color-white, $color-red);
+                    @include border-radius-circle(5px);
+                    @include border(1px, solid, $color-red);
+                    &:hover {
+                        box-shadow: 0px 15px 30px $btn-shadow;
+                    }
+                }
+                .logo-wrap{
+                    .logo-mid{
+                        img{
+                            &:nth-child(1){
+                                width: 50px;
+                            }
+                            &:nth-child(2){
+                                width: 90px;
+                                margin-left: 34px;
+                            }
+                            &:nth-child(3){
+                                margin-left: 22.5px;
+                                width: 124px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+
+/* less than 991px; */
+@media only screen and (max-width: $tab-xl){
+    .case-study {
+        .case-study-wrap {
+            .case-study-image{
+                .figure-case-img{
+                    img{
+                        width: 320px;
+                    }
+                    &.left-img-sphere{
+                        .orange{
+                            bottom: -6px;
+                            left: -40px;
+                        }
+                        .pink{
+                            right: 4px;
+                            top: -20px;
+                        }
+                        .sm-orange{
+                            right: 50px;
+                            top: -14px;
+                        }
+                        .sm-pink{
+                            bottom: 50px;
+                            left: -10px;
+                        }
+                    }
+                    &.right-img-sphere{
+                        .orange{
+                            bottom: 8px;
+                            left: -12px;
+                        }
+                        .pink{
+                            right: -20px;
+                            top: -40px;
+                        }
+                        .sm-orange{
+                            right: 45px;
+                            top: -12px;
+                        }
+                        .sm-pink{
+                            bottom: 75px;
+                            left: -16px;
+                        }
+                    }
+                    .bg-case{
+                        position: absolute;
+                        z-index: -1;
+                    }
+                    .orange{
+                        width: 231px;
+                        height: 227px;
+                    }
+                    .pink{
+                        width: 240px;
+                        height: 236px;
+                    }
+                    .sm-orange, .sm-pink{
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+            .case-study-content {
+                .case-study-content-wrap{
+                    span {
+                        padding-bottom: 1rem;
+                    }
+                    h3 {
+                        margin-bottom: 1.25rem;
+                    }
+                    p {
+                        margin-bottom: 1.325rem;
+                    }
+                    .caption {
+                        padding-bottom: .425rem;
+                    }
+                    .img-wrap{
+                        .sub-span-img{
+                            width: 120px;
+                        }
+                    }
+                    .btn-case{
+                        width: 120px;
+                        padding: .5rem 0;
+                        margin-top: 2.375rem;
+                    }
+                    .logo-wrap{
+                        .logo-mid{
+                            img{
+                                &:nth-child(1){
+                                    width: 36px;
+                                }
+                                &:nth-child(2){
+                                    width: 76px;
+                                    margin-left: 18px;
+                                }
+                                &:nth-child(3){
+                                    margin-left: 4px;
+                                    width: 110px;
+                                }
+                            }
+                        }
+                    }
+                    .collab-group {
+                        span{
+                            padding-bottom: 1rem;
+                        }
+                        .collab-row {
+                            .collab-span{
+                                span {
+                                    padding-bottom: 3px;
+                                }
+                            } 
+                        }
+                    }
+                }
+            }  
+        }
+    }   
+}
+
+/* less than 767px; */
+@media only screen and (max-width: $mb-xl){
+    .case-study{
+       .case-study-wrap {
+            .case-study-image{
+                .figure-case-img{
+                    img{
+                        width: 280px;
+                    }
+                    &.left-img-sphere{
+                        .orange{
+                            bottom: -2px;
+                            left: -80px;
+                        }
+                        .pink{
+                            right: 4px;
+                            top: -20px;
+                        }
+                        .sm-orange{
+                            right: 50px;
+                            top: -14px;
+                        }
+                        .sm-pink{
+                            bottom: 50px;
+                            left: -10px;
+                        }
+                    }
+                    &.right-img-sphere{
+                        .orange{
+                            bottom: 10px;
+                            left: -55px;
+                        }
+                        .pink{
+                            right: -10px;
+                            top: -35px;
+                        }
+                        .sm-orange{
+                            right: 38px;
+                            top: -8px;
+                        }
+                        .sm-pink{
+                            bottom: 64px;
+                            left: -12px;
+                        }
+                    }
+                    .bg-case{
+                        position: absolute;
+                        z-index: -1;
+                    }
+                    .orange{
+                        width: 290px;
+                        height: 187px;
+                    }
+                    .pink{
+                        width: 220px;
+                        height: 216px;
+                    }
+                    .sm-orange, .sm-pink{
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+            .case-study-content{
+                .case-study-content-wrap{
+                    text-align: center;
+                    span{
+                        padding-bottom: .425rem;
+                    }
+                    h3{
+                        max-width: 450px;
+                        margin: 0 auto 1rem auto;
+                    }
+                    p{
+                        max-width: 350px;
+                        margin: 0 auto 1.125rem;
+                    }
+                    .caption{
+                        padding-bottom: .5rem;
+                    }
+                    .btn-case{
+                        margin-top: 2rem;
+                    }
+                    .img-wrap{
+                        .sub-span-img{
+                           margin: 0 auto;
+                        }
+                    }
+                    .logo-wrap{
+                        @include flexcenter;
+                    }
+                }
+            }
+       } 
+    }  
+}
+
+/* less than 575px; */
+@media only screen and (max-width: $mb-sm){
+     /* case */
+     .case-study{
+        .case-study-wrap{
+            display: block !important;
+            .case-study-image{
+                .figure-case-img{
+                    img{
+                        max-width: 250px;
+                    }
+                    &.left-img-sphere{
+                        .orange{
+                            bottom: -2px;
+                            left: -44px;
+                        }
+                        .pink{
+                            right: 4px;
+                            top: -20px;
+                        }
+                        .sm-orange{
+                            right: 50px;
+                            top: -14px;
+                        }
+                        .sm-pink{
+                            bottom: 50px;
+                            left: -10px;
+                        }
+                    }
+                    &.right-img-sphere{
+                        .orange{
+                            bottom: 4px;
+                            left: -34px;
+                        }
+                        .pink{
+                            right: -10px;
+                            top: -35px;
+                        }
+                        .sm-orange{
+                            right: 38px;
+                            top: -8px;
+                        }
+                        .sm-pink{
+                            bottom: 36px;
+                            left: -28px;
+                        }
+                    }
+                    .orange{
+                        width: 170px;
+                        height: 166px;
+                    }
+                    .pink{
+                        width: 220px;
+                        height: 216px;
+                    }
+                    .sm-orange, .sm-pink{
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+            .case-study-content{
+                .case-study-content-wrap{
+                    text-align: center;
+                    h3{
+                        max-width: 400px;
+                    }
+                    .img-wrap{
+                        @include flexcenter;
+                        .sub-span-img{
+                            width: 100px;
+                            height: 20px;
+                        }
+                    }
+                    .btn-case{
+                        width: 110px;
+                        padding: .3rem 0;
+                    }
+                    .logo-wrap{
+                        .logo-mid{
+                            img{
+                                &:nth-child(1){
+                                    width: 30px;
+                                }
+                                &:nth-child(2){
+                                    width: 70px;
+                                    margin-left: 15px;
+                                }
+                                &:nth-child(3){
+                                    margin-left: 5px;
+                                    width: 116px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $mb-xs){
+    .case-study{
+        .case-study-wrap {
+            .case-study-image{
+                .figure-case-img{
+                    img{
+                        max-width: 200px;
+                    }
+                    &.left-img-sphere{
+                        .orange{
+                            bottom: -24px;
+                            left: -25px;
+                        }
+                        .pink{
+                            right: 4px;
+                            top: -20px;
+                        }
+                        .sm-orange{
+                            right: 39px;
+                            top: -17px;
+                        }
+                        .sm-pink{
+                            bottom: 25px;
+                            left: -9px;
+                        }
+                    }
+                    &.right-img-sphere{
+                        .orange{
+                            bottom: -16px;
+                            left: -14px;
+                        }
+                        .pink{
+                            right: -10px;
+                            top: -35px;
+                        }
+                        .sm-orange{
+                            right: 38px;
+                            top: -8px;
+                        }
+                        .sm-pink{
+                            bottom: 30px;
+                            left: -14px;
+                        }
+                    }
+                    .orange{
+                        width: 120px;
+                        height: 166px;
+                    }
+                    .pink{
+                        width: 170px;
+                        height: 166px;
+                    }
+                    .sm-orange, .sm-pink{
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+            }
+        }
+    }   
+}
+
