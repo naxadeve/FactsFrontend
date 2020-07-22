@@ -5,7 +5,7 @@ const http = require("http");
 const routes = require("./routes");
 
 const app = express();
-const port = process.env.PORT || "3000";
+const port = process.env.PORT || "2008";
 
 app.use("/", express.static(path.join(__dirname, "..", "dist")));
 app.use("/dist", express.static(path.join(__dirname, "../dist")));
