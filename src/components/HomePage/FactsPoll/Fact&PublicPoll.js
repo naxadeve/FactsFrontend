@@ -77,7 +77,7 @@ class FactsPublicPoll extends Component {
                       this.factscard = ref;
                     }}
                   >
-                    <h3 className="factsNepal-title">Fact of the day</h3>
+                    <h3 className="factsNepal-title">FACTS of the day</h3>
                     <Link
                       className="poll-link"
                       to={{

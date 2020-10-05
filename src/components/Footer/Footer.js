@@ -25,6 +25,7 @@ class Footer extends Component {
     // });
   }
   render() {
+    const {siteapi}=this.props;
     return (
       // <Fade bottom duration={1000} delay={600} distance={"0px"}>
       <section className="form-section pdt-111 pdb-50">
@@ -36,7 +37,7 @@ class Footer extends Component {
                   <div className="circle sphere-gradient1 form-sphere"></div>
                   <div className="form-left-title">
                     <div className="circle sphere-gradient1 form-sphere"></div>
-                    <h3 className="headline2">Ready to get the Facts?</h3>
+                    <h3 className="headline2">Ready to get the FACTS?</h3>
                     <span className="caption">
                       Fill in this form or send us an e-mail.
                     </span>
@@ -66,8 +67,9 @@ class Footer extends Component {
                           <img src="./img/24px (2).svg" alt="map" />
                         </span>
                         <span>
-                          8973 NPC 678, 394-Radha Mohan Marga Minbhawan
-                          Kharibot, Kathmandu, Nepal
+                          {siteapi.addressone}
+                          {/* 8973 NPC 678, 394-Radha Mohan Marga Minbhawan
+                          Kharibot, Kathmandu, Nepal */}
                         </span>
                       </li>
 
@@ -75,7 +77,7 @@ class Footer extends Component {
                         <span>
                           <img src="./img/24px.svg" alt="phone " />
                         </span>
-                        <span>+977-1-4469924</span>
+                        <span>{siteapi.mobileno} {siteapi.phoneone}</span>
                       </li>
 
                       <li className="addr">
@@ -101,9 +103,9 @@ class Footer extends Component {
                     </span>
                     <div className="circle sphere-gradient3 form-sphere"></div>
                     <div className="btn-content">
-                      <a>
+                      {/* <a>
                         <img src="./img/appstore.png" alt="appstore" />
-                      </a>
+                      </a> */}
                       <a>
                         <img src="./img/googleplay.png" alt="googleplay" />
                       </a>
@@ -112,27 +114,27 @@ class Footer extends Component {
                   <div className="social-icon-wrap">
                     <a href="https://www.facebook.com/factsnepal/">
                       <figure>
-                        <img src="./img/Social-media-icon (4).svg" alt="" />
+                        <img src="./img/Icon_Facebook.svg" alt="" />
                       </figure>
                     </a>
                     <a href="https://www.youtube.com/channel/UChsaoWvm30EN04vfeYGFWQQ/featured">
                       <figure>
-                        <img src="./img/Social-media-icon (1).svg" alt="" />
+                        <img src="./img/Icon_Youtube.svg" alt="" />
                       </figure>
                     </a>
                     <a href="https://twitter.com/FACTSNepal">
                       <figure>
-                        <img src="./img/Social-media-icon (2).svg" alt="" />
+                        <img src="./img/Icon_Twitter.svg" alt="" />
                       </figure>
                     </a>
                     <a href="https://www.linkedin.com/company/facts-research-&-analytics/about/">
                       <figure>
-                        <img src="./img/Social-media-icon (5).svg" alt="" />
+                        <img src="./img/Icon_LinkedIn.svg" alt="" />
                       </figure>
                     </a>
                     <a href="https://www.instagram.com/naxanp">
                       <figure>
-                        <img src="./img/Social-media-icon (3).svg" alt="" />
+                        <img src="./img/Icon_Instagram.svg" alt="" />
                       </figure>
                     </a>
                   </div>

@@ -55,7 +55,7 @@ class Projects extends Component {
     const { casestudy } = this.state;
     return (
       <React.Fragment>
-        <NavBar noBg={false} />
+        {/* <NavBar noBg={false} /> */}
         <section className="banner project-banner">
         <div class="circle pink-gradient proj-sphere1"></div>
             <div className="circle pink-gradient lg-pink-grad proj-sphere2"></div>
@@ -93,7 +93,7 @@ class Projects extends Component {
           </div>
         </section>
         <Testimonials />
-        <Footer />
+        {/* <Footer /> */}
       </React.Fragment>
     );
   }

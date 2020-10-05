@@ -11,7 +11,7 @@ export default class StrategyContent extends Component {
   render() {
     return (
       <Fragment>
-        <NavBar noBg={false} />
+        {/* <NavBar noBg={false} /> */}
         <section className="banner banner-rd1">
           <div className="circle orange-gradient sphere1"></div>
           <div className="circle red-gradient sphere2"></div>
@@ -101,7 +101,7 @@ export default class StrategyContent extends Component {
           </div>
         </div>
         <Testimonials />
-        <Footer />
+        {/* <Footer /> */}
       </Fragment>
     );
   }

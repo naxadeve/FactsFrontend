@@ -93,7 +93,7 @@ class PublicPollResult extends Component {
     if (pollresponse && pollresponse) {
       return (
         <React.Fragment>
-          <NavBar noBg={false} bgGrey={true} />
+          {/* <NavBar noBg={false} bgGrey={true} /> */}
 
           <div className="banner-content bg-grey">
             <div className="container">

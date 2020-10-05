@@ -11,7 +11,7 @@ class ResearchData extends Component {
   render() {
     return (
       <Fragment>
-        <NavBar noBg={false} />
+        {/* <NavBar noBg={false} /> */}
         <section className="banner banner-rd pdt-40">
             <div className="circle orange-gradient sphere1"></div>
           <div className="circle red-gradient sphere2"></div>
@@ -92,7 +92,7 @@ class ResearchData extends Component {
           </div>
         </div>
         <Testimonials />
-        <Footer />
+        {/* <Footer /> */}
       </Fragment>
     );
   }

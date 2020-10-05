@@ -142,6 +142,12 @@ class AllFactsPage extends Component {
     // }
   };
   render() {
+    const { facts, category } = this.state;
+    const categoryList = facts.map(data=> data.category_title);
+    // let unique = [...new Set(myArray)];
+
+    console.log(category,'cat');
+    console.log(facts,'facts');
     var settings = {
       dots: false,
       infinite: true,
@@ -181,12 +187,11 @@ class AllFactsPage extends Component {
       ]
     };
 
-    const { facts, category } = this.state;
 
     return (
       <ErrorBoundary>
         <Fragment>
-          <NavBar />
+          {/* <NavBar /> */}
           <section className="banner banner-facts pdt-40">
           <div className="circle orange-gradient sphere1"></div>
             <div className="circle red-gradient sphere2"></div>
@@ -196,7 +201,7 @@ class AllFactsPage extends Component {
               <div className="banner-wrap fact-banner-wrap">
                 <div className="title-block">
                   <div className="title-wrap">
-                    <h1 className="headline1">Get the Facts.</h1>
+                    {/* <h1 className="headline1">Get the FACTS.</h1> */}
                     <p className="headline5">
                       Discover reliable, contextual and actionable information &
                       insights
@@ -257,7 +262,7 @@ class AllFactsPage extends Component {
                         {facts &&
                           facts.map(data => {
                             return (
-                              <div className="col-7 offset-3 col-sm-8 offset-sm-2 offset-md-0 col-md-4">
+                              <div className="col-7 offset-3 col-sm-8 offset-sm-2 offset-md-0 col-md-4 mb-30">
                                 <Link
                                   className="grid-col-link"
                                   to={{
@@ -315,7 +320,7 @@ class AllFactsPage extends Component {
           {/* </div> */}
 
           <MobileAppDownloads techBg={true} />
-          <Footer />
+          {/* <Footer /> */}
         </Fragment>
       </ErrorBoundary>
     );

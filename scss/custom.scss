@@ -1,0 +1,23 @@
+
+
+.leaflet-container {
+    height: 400px!important;
+    width: 600px !important;
+}
+.contact-banner{
+    .leaflet-container {
+        height: 400px!important;
+        width: 1200px !important;
+        border: .5px solid #b54d53;
+        border-radius: 20px;
+    }
+}
+
+.leaflet-popup-content-wrapper {
+    text-align: center;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background: #9f2f36!important;
+    color: #fff!important;
+}

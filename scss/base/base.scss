@@ -46,6 +46,7 @@
     @include typo($font-family, 400, 1.5);
     font-size: 1.313rem;
     color: $color-red;
+    word-break: break-all;
 }
 .headline5{
     @include typo($font-family, 400, 1.781);
@@ -217,6 +218,10 @@
 }
 .pdt-140{
     padding-top: 8.813rem !important;
+}
+
+.mb-30{
+    margin-bottom: 1.5rem !important;
 }
 
 // R&D

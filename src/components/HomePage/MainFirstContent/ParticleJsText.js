@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Fade from "react-reveal/Fade";
 
 
-const ParticleJsText = () => (
+const ParticleJsText = ({siteapi}) => (
 
     <div className="banner-wrap">
         <div className="title-block">
