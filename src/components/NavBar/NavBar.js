@@ -51,7 +51,11 @@ class NavBar extends Component {
                     {siteapi && (
                       <div className="logo-img">
                         <img
-                          src={`${process.env.API_URL}${siteapi.logo}`}
+                        style={{width:"200px",height: "49px"}}
+                        
+                        // height= "49px"
+                          // src={`${process.env.API_URL}${siteapi.logo}`}
+                          src="../../../img/FactsLogo_new.png"
                           alt="Facts Nepal"
                           className="logo-icon"
                         />

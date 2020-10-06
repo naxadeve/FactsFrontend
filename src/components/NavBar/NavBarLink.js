@@ -64,7 +64,7 @@ const NavBarLink = () => (
         <LinkItem path="/projects" text="Projects" />
       </li>
       <li className="menu-items">
-        <LinkItem path="/allfacts" text="FACTS" />
+        <LinkItem path="/allfacts" text="Infographics" />
       </li>
       <li className="menu-items">
         <LinkItem path="/about" text="About" />

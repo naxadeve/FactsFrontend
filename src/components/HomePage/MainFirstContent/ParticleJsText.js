@@ -19,7 +19,7 @@ const ParticleJsText = ({siteapi}) => (
             </div>
         </div>
         <Fade bottom duration={1700} distance={"20px"}>
-            <img src="./img/main.svg" alt="banner-img" />
+            <img src="./img/HomePage_AI.png" alt="banner-img" />
         </Fade>
     </div>
 
