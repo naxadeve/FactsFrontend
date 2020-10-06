@@ -78,7 +78,7 @@ export default class FactsPage extends Component {
     console.log(singlefacts, "single");
     return (
       <Fragment>
-        <NavBar noBg={true} />
+        {/* <NavBar noBg={true} /> */}
         <div>
           <div className="banner-content">
             <div className="container">
@@ -254,7 +254,7 @@ export default class FactsPage extends Component {
             <div className="container">
               <div className="grid-section">
                 <div className="grid-title-wrap">
-                  <h4 className="factsNepal-subtitle">Next facts</h4>
+                  <h4 className="factsNepal-subtitle">Next FACTS</h4>
                 </div>
 
                 <div className="grid-facts1 pdt-40">
@@ -333,7 +333,7 @@ export default class FactsPage extends Component {
           </section>
         </div>
         <MobileAppDownloads techBg={true} />
-        <Footer />
+        {/* <Footer /> */}
       </Fragment>
     );
   }

@@ -23,23 +23,42 @@ import About from "../pages/About";
 import ContactPage from "../pages/ContactPage";
 import Contact from "../pages/Contact";
 import SingleCaseStudy from "../pages/SingleCaseStudy";
+import Axios from "axios";
+import NavBar from "../components/NavBar/NavBar";
 
 // const Footer = () => (<h1> FOOTER </h1>);
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      siteapi:[],
+    };
   }
-
+  componentDidMount(){
+    Promise.all([
+      Axios({
+        method: "GET",
+        url: `${process.env.API_URL}api/siteapi`,
+        headers: {
+          "content-type": "application/json",
+          Accept: "application/json"
+        }
+      })
+    ]).then(response => {
+      console.log(response);
+      this.setState({siteapi:response[0].data[0].sitedata[0]})
+    });
+  }
   render() {
     return (
       <div className="page">
         <Router>
           <ScrollToTop />
+          <NavBar siteapi={this.state.siteapi} />
           {/* <Navbar noBg={true} /> */}
           <Switch>
-            <Route exact path="/" component={HomePage} />
+            <Route exact path="/" render={props=>(<HomePage siteapi={this.state.siteapi}/>)} />
             <Route path="/publicpoll" component={PublicPoll} />
             <Route path="/facts/:id" component={FactsPage} />
             <Route path="/researchdata" component={ResearchData} />
@@ -55,7 +74,7 @@ class App extends Component {
             {/* <Route path="/works" component={WorksPage} /> */}
             {/* <Route path="/contact" component={ContactPage} /> */}
           </Switch>
-          {/* <Footer /> */}
+          <Footer siteapi={this.state.siteapi}/>
         </Router>
       </div>
     );

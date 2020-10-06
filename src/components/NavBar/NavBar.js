@@ -1,6 +1,6 @@
 import React, { Component, ReactDOM } from "react";
 import NavBarLink from "./NavBarLink";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 // const navbar = {
 //   padding: "0.7894736842rem",
@@ -28,6 +28,7 @@ class NavBar extends Component {
     }
   };
   render() {
+    const { siteapi } = this.props;
     return (
       <React.Fragment>
         {/* {console.log(this.state.btnclick)} */}
@@ -37,23 +38,29 @@ class NavBar extends Component {
             this.props.bgGrey ? "bg-grey" : ""
           }`}
         >
-          <div ref={ref => (this._div = ref)} className="wrap">
+          <div ref={(ref) => (this._div = ref)} className="wrap">
             <div className="container full-width-container">
               <div className="header-top">
                 <div className="logo">
                   <Link
                     className="poll-link"
                     to={{
-                      pathname: `/`
+                      pathname: `/`,
                     }}
                   >
-                    <div className="logo-img">
-                      <img
-                        src="./img/logo.svg"
-                        alt="Facts Nepal"
-                        className="logo-icon"
-                      />
-                    </div>
+                    {siteapi && (
+                      <div className="logo-img">
+                        <img
+                        style={{width:"200px",height: "49px"}}
+                        
+                        // height= "49px"
+                          // src={`${process.env.API_URL}${siteapi.logo}`}
+                          src="../../../img/FactsLogo_new.png"
+                          alt="Facts Nepal"
+                          className="logo-icon"
+                        />
+                      </div>
+                    )}
                   </Link>
                 </div>
 
@@ -88,4 +95,4 @@ class NavBar extends Component {
   }
 }
 
-export default NavBar;
+export default withRouter(NavBar);

@@ -7,6 +7,8 @@
                 height: 100%;
                 width: 100%;
                 .grid-col{
+                    height: 100%;
+                    margin-bottom: 0;
                     @include border-radius-circle(5px);
                     box-shadow: 0px 1px 3px $color-box-shadow;
                     &:hover{
@@ -19,22 +21,27 @@
                         margin-bottom: 0 !important;
                     }
                     .content-wrap{
-                        padding: 1.375rem 0 1rem 1.875rem;
+                        padding: 1.375rem 2rem;
                         .span-color{
                             color: $color-blue !important;
                         }
                         span{
-                            display: block;
+                            display: inline-block;
                             &:nth-child(1){
                                 @include typo($font-family, 400, 1.406);
                                 letter-spacing: 1.125px;
                                 color: $color-limegreen;
                                 text-transform: uppercase;
+                                
                             }
                             &:nth-child(2){
                                 @include typo($font-family, 400, 1.5);
                                 color: $color-primary;
-                                padding: 3.75px 0 15px;
+                                margin: 3.75px 0 15px;
+                                display: -webkit-box !important;
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
                             }
                         }
                     }

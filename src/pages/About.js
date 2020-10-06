@@ -3,25 +3,67 @@ import NavBar from "../components/NavBar/NavBar";
 import Footer from "../components/Footer/Footer";
 import Testimonials from "../components/Testimonials/Testimonials";
 import Trusted from "../components/HomePage/Trusted/Trusted";
+import Axios from "axios";
 
+const TeamCard = ({img,name,designation}) => {
+  return (
+    <div className="col-md-4">
+      <div className="col-wrap">
+        <div className="figure">
+          <img src={img} alt="" />
+        </div>
+        <div className="title">
+          <h5 className="headline5">{name}</h5>
+          <p className="body-para">{designation}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
 class About extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      teams: [],
+    };
+  }
+  componentDidMount() {
+    Promise.all([
+      Axios({
+        method: "GET",
+        url: `${process.env.API_URL}api/teamapi`,
+        headers: {
+          "content-type": "application/json",
+          Accept: "application/json",
+        },
+      }),
+    ]).then((response) => {
+      // console.log(response[0]);
+      // const categoryfacts = response[0].data[0].home.data.map(fact => ({
+      //   ...fact
+      // }));
+
+      // response[0].data[0].home.data = categoryfacts;
+
+      this.setState({
+        teams: response[0].data.ourteam,
+      });
+    });
   }
   render() {
+    const {teams}=this.state;
     return (
       <React.Fragment>
-        <NavBar noBg={false} />
+        {/* <NavBar noBg={false} /> */}
         <section className="banner about-banner pdb-80">
           <div className="container">
             <div className="about-banner-wrap">
               <div className="row">
                 <div className="order-2 order-sm-2 order-md-1 col-md-5">
                   <div className="col-wrap-center">
-                  <div className="circle red-gradient about-sphere"></div>
+                    <div className="circle red-gradient about-sphere"></div>
                     <div className="col-wrap">
-                      <span className="sec-caption">About</span>
+                      <span className="sec-caption">Our Story</span>
                       <h3 className="headline2">
                         We are <br />
                         FACTS Research & Analytics.
@@ -32,11 +74,23 @@ class About extends Component {
                 <div className="order-1 order-sm-1 order-md-2 col-md-7">
                   <div className="col-wrap">
                     <figure className="figure-case-img right-img-sphere">
-                    <img className="bg-case orange" src="./img/IMAGE-shape2.svg"/>
-                    <img className="bg-case pink" src="./img/IMAGE-shape4.svg"/>
-                    <img className="bg-case sm-pink" src="./img/IMAGE-shape1.svg"/>
-                    <img className="bg-case sm-orange" src="./img/IMAGE-shape3.svg"/>
-                      <img src="./img/our-team1.png" alt="" />
+                      <img
+                        className="bg-case orange"
+                        src="./img/IMAGE-shape2.svg"
+                      />
+                      <img
+                        className="bg-case pink"
+                        src="./img/IMAGE-shape4.svg"
+                      />
+                      <img
+                        className="bg-case sm-pink"
+                        src="./img/IMAGE-shape1.svg"
+                      />
+                      <img
+                        className="bg-case sm-orange"
+                        src="./img/IMAGE-shape3.svg"
+                      />
+                      {/* <img src="./img/our-team1.png" alt="" /> */}
                     </figure>
                   </div>
                 </div>
@@ -239,44 +293,8 @@ class About extends Component {
 
             <div className="team-members pdt-68 pdb-68">
               <div className="row">
-                <div className="col-md-4">
-                  <div className="col-wrap">
-                    <div className="figure">
-                      <img src="./img/team-Robin.png" alt="" />
-                    </div>
-                    <div className="title">
-                      <h5 className="headline5">Robin sitoula</h5>
-                      <p className="body-para">Chairman</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-md-4">
-                  <div className="col-wrap">
-                    <div className="figure">
-                      <img src="./img/team-Manish.png" alt="" />
-                    </div>
-                    <div className="title">
-                      <h5 className="headline5">Manish sitoula</h5>
-                      <p className="body-para">Chief Executive Officer</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-md-4">
-                  <div className="col-wrap">
-                    <div className="figure">
-                      <img src="./img/team-Prabodh.png" alt="" />
-                    </div>
-                    <div className="title">
-                      <h5 className="headline5">Prabodh acharya</h5>
-                      <p className="body-para">
-                        Director - Strategic Communications & Operations
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+               {teams && teams.map(data=><TeamCard name={data.title} img={data.image} designation={data.position}/>)}
+               </div>
             </div>
 
             <div className="jumbotron info-jumbotron">
@@ -304,7 +322,7 @@ class About extends Component {
           </div>
         </section>
         <Testimonials />
-        <Footer />
+        {/* <Footer /> */}
       </React.Fragment>
     );
   }

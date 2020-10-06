@@ -13,8 +13,10 @@ const NavBarLink = () => (
   // </nav>
   <nav className="navitems" id="nav-links">
     <ul className="menu-lists">
+    <li className="menu-items">
+        <LinkItem path="/" text="Home" />
+      </li>
       <li className="menu-items dropdown-grid" id="dropdown">
-
         <LinkItem path="#" text="Services" className="drpbtn" id="toggle-link" />
         <div id="myGridcontent" className="grid-content">
           <div className="grid-container">
@@ -62,7 +64,7 @@ const NavBarLink = () => (
         <LinkItem path="/projects" text="Projects" />
       </li>
       <li className="menu-items">
-        <LinkItem path="/allfacts" text="Facts" />
+        <LinkItem path="/allfacts" text="Infographics" />
       </li>
       <li className="menu-items">
         <LinkItem path="/about" text="About" />

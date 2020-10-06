@@ -264,7 +264,7 @@ class ContactPage extends Component {
                         <div className="col-12 col-md-6">
                             <div className="form-left">
                                 <div className="form-left-title">
-                                    <h3 className="headline2">Ready to get the Facts?</h3>
+                                    <h3 className="headline2">Ready to get the FACTS?</h3>
                                     <span className="caption">Fill in this form or send us an e-mail.</span>
                                 </div>
                                 <div className="form-wrap">
@@ -321,7 +321,7 @@ class ContactPage extends Component {
                                 <div className="form-btn-wrap">
                                     <span className="caption">Available for your smartphone</span>
                                     <div className="btn-content">
-                                        <a><img src="./img/appstore.png" alt="appstore"/></a>
+                                        {/* <a><img src="./img/appstore.png" alt="appstore"/></a> */}
                                         <a><img src="./img/googleplay.png" alt="googleplay"/></a>
                                     </div>
                                 </div>

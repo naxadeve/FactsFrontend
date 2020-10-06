@@ -39,7 +39,7 @@ class ResourcesBooks extends Component {
             <div className="resources-title">
               <h3 className="headline2">Resources</h3>
               <p className="body-para">
-                Welcome to read the issue of Facts Nepal books and publications.
+                Welcome to read the issue of FACTS Nepal books and publications.
               </p>
             </div>
             <div className="resources-grid-content">

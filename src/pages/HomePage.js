@@ -20,22 +20,23 @@ class HomePage extends Component {
   }
 
   render() {
+    const {siteapi}=this.props;
     return (
       <React.Fragment>
-        <NavBar />
+        {/* <NavBar siteapi={siteapi} /> */}
         <div className="Scrollreveal">
           {/* <div className="background-wrap"> */}
-          <FirstMain />
+          <FirstMain siteapi={siteapi}/>
           {/* </div> */}
-          <Trusted />
-          <Services />
-          <FactsPublicPoll />
+          <Trusted siteapi={siteapi}/>
+          <Services siteapi={siteapi}/>
+          <FactsPublicPoll siteapi={siteapi} />
           <CaseStudy />
           <GeographicalCoverage />
           <ResourcesBooks />
           <Testimonials />
           <MobileAppDownloads />
-          <Footer />
+          {/* <Footer siteapi={siteapi}/> */}
           {/* <Footer /> */}
           {/* <Initiatives />
         <HappyClients />

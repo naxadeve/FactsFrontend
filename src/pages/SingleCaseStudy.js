@@ -37,7 +37,7 @@ class SingleCaseStudy extends Component {
     const { casestudy } = this.state;
     return (
       <Fragment>
-        <NavBar noBg={true} />
+        {/* <NavBar noBg={true} /> */}
         {casestudy && casestudy[0] && (
           <Fragment>
             <section className="case-study case-project-study">

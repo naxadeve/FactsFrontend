@@ -89,7 +89,7 @@ class AboutPage extends Component {
   render() {
     return (
       <React.Fragment>
-        <NavBar noBg={false} />
+        {/* <NavBar noBg={false} /> */}
         <div>
           <div>
             <section className="aboutTop ">
