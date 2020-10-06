@@ -1,4 +1,5 @@
 .geographical-coverage-details{
+    padding: 20px 0;
     background: rgba($color-pink, 0.2);
     .geographical-details-wrap{
         position: relative;
@@ -12,6 +13,10 @@
             @include border-radius-circle(50%);
         }
         .details-left{
+            height: 100%;
+            @include flex;
+            @include flexcenter;
+            flex-direction: column;
             h3{
                 margin-bottom: 0 !important;
             }
