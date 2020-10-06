@@ -9,6 +9,11 @@
         position: relative;
         z-index: 9999;
         background: $color-stop1;
+        &.is-sticky{
+            position: absolute;
+            background: transparent;
+            width: 100%;
+        }
         .wrap{
             padding-top: 30px;
             .full-width-container{

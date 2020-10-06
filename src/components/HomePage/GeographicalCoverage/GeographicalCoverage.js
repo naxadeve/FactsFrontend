@@ -8,7 +8,7 @@ class GeographicalCoverage extends Component {
   }
   render() {
     return (
-      <section className="geographical-coverage-details pdt-47 pdb-47">
+      <section className="geographical-coverage-details">
         <div className="container">
           <div className="geographical-details-wrap">
             <div class="sphere"></div>

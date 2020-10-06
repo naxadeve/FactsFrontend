@@ -87,15 +87,58 @@
         }
         
     }
+    &.is-bg{
+        @include flexvr;
+        height: 100vh;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-attachment: fixed;
+            opacity: 1;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            background-blend-mode: multiply;
+            background-image: url('.././img/HomePage_AI.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center bottom;
+            background-color: #00000029;
+            
+        }
+        &.is-dark {
+            &::after {
+                z-index: 1;
+                background-color: transparent;
+            }
+            .banner-wrap{
+                z-index: 11;
+                position: relative;
+                .title-block{
+                    .title-wrap{
+                        .headline1{
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .banner-wrap{
         padding-bottom: 1.688rem;
         text-align: center;
         .title-block{
             display: flex;
             justify-content: center;
-            
             .title-wrap{
+                position: relative;
+                z-index: 1;
                 max-width: 850px;
+               
                 .headline1{
                     margin-bottom: 1rem;
                 }

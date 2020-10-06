@@ -101,11 +101,7 @@ class About extends Component {
         <section className="about-section story-section pdb-95">
           <div className="container">
             <div className="row">
-              <div className="col-md-3">
-                <div className="heading-section">
-                  <h3 className="headline3">Our story</h3>
-                </div>
-              </div>
+             
               <div className="col-md-9">
                 <div className="content-section">
                   <p className="body-para-second">
