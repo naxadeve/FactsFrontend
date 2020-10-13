@@ -5,7 +5,7 @@ import ParticleJsText from "./ParticleJsText";
 const FirstMain = ({siteapi}) => (
   // <div className="background-wrap">
 
-  <section className="banner is-bg is-dark ">
+  <section className="banner is-bg">
     <ParticleJsImg />
     <div className="container">
       <ParticleJsText siteapi={siteapi} />

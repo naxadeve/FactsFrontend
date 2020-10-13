@@ -31,27 +31,47 @@
     @include typo($font-family, 600, 3.375);
     font-size: 2.563rem;
     color: $color-red;
+    @media only screen and (max-width: 1560px){
+        font-size: 2.2rem;;
+    }
+    @media only screen and (max-width: 1440px){
+        font-size: 1.5rem;
+        max-width: 600px;
+        margin: auto;
+    }
 }
 .headline2{
     @include typo($font-family, 300, 2.813);
     font-size: 1.65rem;
     color: $color-primary;
+    @media only screen and (max-width: 1560px){
+        font-size: 1.25rem;
+    }
 }
 .headline3{
     @include typo($font-family, 500, 2.063);
     font-size: 1.563rem;
     color: $color-primary;
+    @media only screen and (max-width: 1560px){
+        font-size: 1.25rem;
+    }
 }
 .headline4{
     @include typo($font-family, 400, 1.5);
     font-size: 1.313rem;
     color: $color-red;
     word-break: break-all;
+    @media only screen and (max-width: 1560px){
+        font-size: 1rem;
+    }
 }
 .headline5{
     @include typo($font-family, 400, 1.781);
     font-size: 1.125rem;
     color: $color-primary;
+    @media only screen and (max-width: 1560px){
+        font-size: .938rem;
+    }
 }
 .body-para{
     @include typo($font-family, 300, 1.406);

@@ -169,8 +169,8 @@
                 display: flex;
                 justify-content: center;
                 .title-wrap{
+                    top: 16vh;
                     position: relative;
-                    top: 15vh;
                     max-width: 300px;
                     .banner-title{
                         @include typo($font-family, 600, 1.5);
@@ -1183,6 +1183,7 @@
                 }
                 .title-block{
                     .title-wrap{
+                        
                         max-width: 850px;
                     }
                 }
@@ -1330,7 +1331,7 @@
                 }
                 .title-block{
                     .title-wrap{
-                        top: 20vh;
+                        top: 16vh;
                         max-width: 900px;
                     }
                 }

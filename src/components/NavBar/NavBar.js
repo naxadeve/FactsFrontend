@@ -34,7 +34,7 @@ class NavBar extends Component {
         {/* {console.log(this.state.btnclick)} */}
 
         <header
-          className={`site-header pdb-100 ${this.props.noBg ? "no-bg" : ""} ${
+          className={`site-header is-fixed pdb-100 ${this.props.noBg ? "no-bg" : ""} ${
             this.props.bgGrey ? "bg-grey" : ""
           }`}
         >
