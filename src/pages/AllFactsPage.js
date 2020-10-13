@@ -198,19 +198,18 @@ class AllFactsPage extends Component {
             <div className="circle pink-gradient sphere3"></div>
             <div className="circle lightorange-gradient sphere4"></div>
             <div className="container">
-              <div className="banner-wrap fact-banner-wrap">
+              {/* <div className="banner-wrap fact-banner-wrap">
                 <div className="title-block">
                   <div className="title-wrap">
-                    {/* <h1 className="headline1">Get the FACTS.</h1> */}
                     <p className="headline5">
                       Discover reliable, contextual and actionable information &
                       insights
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <section className="slider-facts-nav">
-                <div className="slider pdt-100 pdb-20">
+                <div className="slider">
                   <div className="slider-container">
                     <Slider
                       {...settings}

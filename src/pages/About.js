@@ -65,8 +65,7 @@ class About extends Component {
                     <div className="col-wrap">
                       <span className="sec-caption">Our Story</span>
                       <h3 className="headline2">
-                        We are <br />
-                        FACTS Research & Analytics.
+                        We are FACTS Research & Analytics.
                       </h3>
                     </div>
                   </div>
@@ -102,7 +101,7 @@ class About extends Component {
           <div className="container">
             <div className="row">
              
-              <div className="col-md-9">
+              <div className="col-md-12">
                 <div className="content-section">
                   <p className="body-para-second">
                     A lack of proper and timely availability of data in Nepal

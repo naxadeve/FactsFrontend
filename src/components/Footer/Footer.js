@@ -33,33 +33,33 @@ class Footer extends Component {
           <div className="row">
             <div className="col-12 col-md-6">
               <div className="form-left">
-                <Fade bottom duration={600} delay={400} distance={"0px"}>
+                {/* <Fade bottom duration={600} delay={400} distance={"0px"}> */}
                   <div className="circle sphere-gradient1 form-sphere"></div>
                   <div className="form-left-title">
                     <div className="circle sphere-gradient1 form-sphere"></div>
-                    <h3 className="headline2">Ready to get the FACTS?</h3>
+                    <h3 className="headline2">Feel Free to Contact Us !</h3>
                     <span className="caption">
                       Fill in this form or send us an e-mail.
                     </span>
                   </div>
-                </Fade>
+                {/* </Fade> */}
                 <div className="form-wrap">
-                  <Fade bottom duration={900} delay={600} distance={"0px"}>
+                  {/* <Fade bottom duration={900} delay={600} distance={"0px"}> */}
                     <FeedbackForm handler={this.handler} />
-                  </Fade>
+                  {/* </Fade> */}
                   {/* <span className="copyright">© 2019<span className="subtitle"> FACTS Research & Analytics.</span></span> */}
                 </div>
               </div>
             </div>
             <div className="col-12 offset-0 offset-md-1 col-md-5">
               <div className="form-right">
-                <Fade bottom duration={800} delay={500} distance={"0px"}>
+                {/* <Fade bottom duration={800} delay={500} distance={"0px"}> */}
                   <div className="form-right-title">
                     <div className="circle sphere-gradient2 form-circle"></div>
                     <h3 className="headline2">Contact</h3>
                   </div>
-                </Fade>
-                <Fade bottom duration={900} delay={600} distance={"0px"}>
+                {/* </Fade> */}
+                {/* <Fade bottom duration={900} delay={600} distance={"0px"}> */}
                   <div className="form-address">
                     <ul className="addr-list caption">
                       <li className="addr">
@@ -95,8 +95,8 @@ class Footer extends Component {
                   <span><img src="./img/24px.svg" alt="phone" /></span>
                   <span><img src="./img/24px (1).svg" alt="mail" /></span> */}
                   </div>
-                </Fade>
-                <Fade bottom duration={1000} delay={800} distance={"0px"}>
+                {/* </Fade> */}
+                {/* <Fade bottom duration={1000} delay={800} distance={"0px"}> */}
                   <div className="form-btn-wrap">
                     <span className="caption">
                       Available for your smartphone
@@ -138,7 +138,7 @@ class Footer extends Component {
                       </figure>
                     </a>
                   </div>
-                </Fade>
+                {/* </Fade> */}
               </div>
             </div>
           </div>
