@@ -12,12 +12,10 @@
                     .header-top{
                         flex-direction: row;
                         .logo{
-                            .logo-img{
                                 img{
                                     width: 130px;
                                     height: 32px;
                                 }
-                            }
                         }
                         .navitems{
                             display: block;
@@ -223,14 +221,6 @@
                 .wrap{
                     .header-top{
                         flex-direction: row;
-                        .logo{
-                            .logo-img{
-                                img{
-                                    // width: 142px;
-                                    // height: 36px;
-                                }
-                            }
-                        }
                         .navitems{
                             display: block;
                             .menu-lists{
@@ -437,12 +427,9 @@
                     .header-top{
                         flex-direction: column; 
                         .logo{
-                            .logo-img{
                                 img{
                                     width: 115px;
-                                    height: 16px;
                                 }
-                            }
                         }
                         .navitems{
                             display: none;
@@ -657,12 +644,9 @@
                     .header-top{
                         flex-direction: column;
                         .logo{
-                            .logo-img{
                                 img{
                                     width: 72px;
-                                    height: 18px;
                                 }
-                            }
                         }
                         .navitems{
                             display: none;

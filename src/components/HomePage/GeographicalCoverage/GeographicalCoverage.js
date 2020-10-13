@@ -27,7 +27,7 @@ class GeographicalCoverage extends Component {
               <div className="col-md-7">
                 <div className="details-right">
                   <div className="details-right-content">
-                    <img src="../../../../img/FACTS Geographical Map.png"></img>
+                    <img src="../../../../img/FACTS-Geographical-Map.png"></img>
                     {/* <MapComponent/> */}
                     {/* <button className="btn-case">Explore Map</button> */}
                   </div>

@@ -9,7 +9,7 @@
         position: relative;
         z-index: 9999;
         background: $color-stop1;
-        &.is-sticky{
+        &.is-fixed{
             position: absolute;
             background: transparent;
             width: 100%;
@@ -169,6 +169,8 @@
                 display: flex;
                 justify-content: center;
                 .title-wrap{
+                    position: relative;
+                    top: 15vh;
                     max-width: 300px;
                     .banner-title{
                         @include typo($font-family, 600, 1.5);
@@ -183,6 +185,7 @@
         .top-content-wrap{
             @include flexcenter;
             .top-wrapper{
+                margin-bottom: 50px;
                 width: 600px;
                 .title{
                     @include typo($font-family, 400, 1.5);
@@ -234,6 +237,11 @@
                 
                 .slider-for{
                     margin: 0px 0px 40px;
+                    figure{
+                        img{
+                            margin: auto;
+                        }
+                    }
                     .image-content{
                         .portrait-fix{
                             background-image: url(.././img/postdesktopII-portrait.png);
@@ -403,18 +411,15 @@
                     max-width: 100%;
                     .header-top{
                         flex-direction: column; 
-                        .toggle-button{
-                            right: 30px;
-                        }
                         .logo{
-                            .logo-img{
-                                img{
-                                    margin-left: 30px;
-                                    width: 72px;
-                                    // height: 15px;
-                                }
+                            img{
+                                margin-left: 30px;
+                                max-width: 100px;
                             }
                         }
+                        .toggle-button{
+                            right: 30px;
+                        }   
                         .navitems{
                             display: none;
                             .menu-lists{
@@ -606,14 +611,6 @@
                                 }
                             }
                         }
-                        .logo{
-                            .logo-img{
-                                img{
-                                    margin-left: 30px;
-                                    width: 60px;
-                                }
-                            }
-                        }
                         .navitems{
                             .menu-lists{
                                 .menu-items{
@@ -690,12 +687,10 @@
                     .header-top{
                         flex-direction: column;
                         .logo{
-                            .logo-img{
                                 img{
                                     margin-left: 50px;
-                                    max-width: 85px;
+                                    max-width: 100px;
                                 }
-                            }
                         }
                         .navitems{
                             display: none;
@@ -840,12 +835,9 @@
                     .header-top{
                         flex-direction: row; 
                         .logo{
-                            .logo-img{
                                 img{
                                     margin-left: 0px;
-                                    max-width: 90px;
                                 }
-                            }
                         }
                         .navitems{
                             display: block;
@@ -992,15 +984,6 @@
                     padding-left: 15px;
                     .header-top{
                         flex-direction: row; 
-                        .logo{
-                            .logo-img{
-                                img{
-                                    margin-left: 0;
-                                    max-width: 100px;
-                                    height: 24px;
-                                }
-                            }
-                        }
                         .navitems{
                             display: block;
                             .menu-lists{
@@ -1136,14 +1119,6 @@
                     padding-left: 15px;
                     .header-top{
                         flex-direction: row;
-                        .logo{
-                            .logo-img{
-                                img{
-                                    margin-left: 0;
-                                    max-width: 100px;
-                                }
-                            }
-                        }
                         .navitems{
                             display: block;
                             .menu-lists{
@@ -1288,12 +1263,10 @@
                     .header-top{
                         flex-direction: row;
                         .logo{
-                            .logo-img{
                                 img{
                                     margin-left: 0;
-                                    max-width: 100px;
+                                    max-width: 115px;
                                 }
-                            }
                         }
                         .navitems{
                             display: block;
@@ -1357,6 +1330,7 @@
                 }
                 .title-block{
                     .title-wrap{
+                        top: 20vh;
                         max-width: 900px;
                     }
                 }
