@@ -134,6 +134,11 @@
                             }
                             .grid-button{  
                                 margin-top: .875rem; 
+                                display: flex;
+                                align-items: center;
+                                margin: 0 auto;
+                                justify-content: center;
+                                width: 100%;
                             }
                         }
                     }

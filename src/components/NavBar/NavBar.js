@@ -34,7 +34,7 @@ class NavBar extends Component {
         {/* {console.log(this.state.btnclick)} */}
 
         <header
-          className={`site-header  pdb-100 ${this.props.noBg ? "no-bg" : ""} ${
+          className={`site-header pdb-100 ${this.props.noBg ? "no-bg" : ""} ${
             this.props.bgGrey ? "bg-grey" : ""
           }`}
         >
@@ -49,9 +49,7 @@ class NavBar extends Component {
                     }}
                   >
                     {siteapi && (
-                      <div className="logo-img">
                         <img
-                        style={{width:"200px",height: "49px"}}
                         
                         // height= "49px"
                           // src={`${process.env.API_URL}${siteapi.logo}`}
@@ -59,7 +57,6 @@ class NavBar extends Component {
                           alt="Facts Nepal"
                           className="logo-icon"
                         />
-                      </div>
                     )}
                   </Link>
                 </div>
