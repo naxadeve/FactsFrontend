@@ -88,7 +88,8 @@
         
     }
     &.is-bg{
-        @include flexvr;
+        @include flex;
+        align-items: flex-start;
         height: 100vh;
         &::after{
             content: '';
@@ -100,34 +101,17 @@
             left: 0;
             bottom: 0;
             right: 0;
-            z-index: -1;
-            background-blend-mode: multiply;
+            z-index: 1;
             background-image: url('.././img/main-header.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center bottom;
-            background-color: #00000029;
             
-        }
-        &.is-dark {
-            &::after {
-                z-index: 1;
-                background-color: transparent;
-            }
-            .banner-wrap{
-                z-index: 11;
-                position: relative;
-                .title-block{
-                    .title-wrap{
-                        .headline1{
-                            color: #000000;
-                        }
-                    }
-                }
-            }
         }
     }
     .banner-wrap{
+        z-index: 11;
+        position: relative;
         padding-bottom: 1.688rem;
         text-align: center;
         .title-block{
