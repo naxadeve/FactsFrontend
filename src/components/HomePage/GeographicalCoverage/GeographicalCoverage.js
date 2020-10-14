@@ -13,7 +13,15 @@ class GeographicalCoverage extends Component {
           <div className="geographical-details-wrap">
             <div class="sphere"></div>
             <div className="row">
-              <div className="col-md-5">
+              <div className="col-md-10">
+                <div className="details-right">
+                  <div className="details-right-content">
+                    <img src="../../../../img/FACTS-Geographical-Map.png"></img>
+                    {/* <MapComponent/> */}
+                    {/* <button className="btn-case">Explore Map</button> */}
+                  </div>
+                </div>
+              </div>
                 <div className="details-left">
                   <h3 className="headline2">Geographical coverage</h3>
                   <div className="para-center">
@@ -21,16 +29,6 @@ class GeographicalCoverage extends Component {
                       We have carried out research projects in over 68 districts
                       (out of 75) across Nepal.
                     </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-7">
-                <div className="details-right">
-                  <div className="details-right-content">
-                    <img src="../../../../img/FACTS-Geographical-Map.png"></img>
-                    {/* <MapComponent/> */}
-                    {/* <button className="btn-case">Explore Map</button> */}
-                  </div>
                 </div>
               </div>
             </div>
