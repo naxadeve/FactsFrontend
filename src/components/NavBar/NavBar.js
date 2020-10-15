@@ -28,13 +28,14 @@ class NavBar extends Component {
     }
   };
   render() {
+  const headerBg=location && location.pathname && location.pathname.includes('/facts/')|| location.pathname.includes('/publicpoll/') ? true: false;
     const { siteapi } = this.props;
     return (
       <React.Fragment>
         {/* {console.log(this.state.btnclick)} */}
 
         <header
-          className={`site-header is-fixed pdb-100 ${this.props.noBg ? "no-bg" : ""} ${
+          className={`site-header pdb-100 ${headerBg ? "no-bg" : ""} ${
             this.props.bgGrey ? "bg-grey" : ""
           }`}
         >
@@ -53,7 +54,7 @@ class NavBar extends Component {
                         
                         // height= "49px"
                           // src={`${process.env.API_URL}${siteapi.logo}`}
-                          src="../../../img/FactsLogo_new.png"
+                          src="../../../img/FACTS logo.png"
                           alt="Facts Nepal"
                           className="logo-icon"
                         />

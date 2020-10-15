@@ -35,7 +35,7 @@ class Services extends Component {
             <div className="grid-content">
               <div className="grid-container">
                 <div className="row">
-                  <div className="col-md-4">
+                  <div className="col-md-3">
                     <Link
                       to={{
                         pathname: `/researchdata`
@@ -69,7 +69,7 @@ class Services extends Component {
                       </div>
                     </Link>
                   </div>
-                  <div className="col-md-4">
+                  <div className="col-md-3">
                     <Link
                       to={{
                         pathname: `/strategycontent`
@@ -103,7 +103,41 @@ class Services extends Component {
                       </div>
                     </Link>
                   </div>
-                  <div className="col-md-4">
+                  <div className="col-md-3">
+                    <Link
+                      to={{
+                        pathname: `/infographics`
+                      }}
+                    >
+                      <div className="grid-col mb-0">
+                        <figure className="fig bg-alter-left">
+                          <img
+                            className="bg-img bg-lg-img"
+                            src="./img/ICON-shape2.svg"
+                          />
+                          <img
+                            className="grid-img"
+                            src="./img/Services-icon-3.svg"
+                            alt="file searcrhing"
+                          />
+                          <img
+                            className="bg-img bg-sm-img"
+                            src="./img/ICON-shape1.svg"
+                          ></img>
+                        </figure>
+                        <h4 className="headline4">
+                          Infographics <br></br> Design
+                        </h4>
+                        <div className="para-center">
+                          <p className="body-para">
+                            Supplying you with relevant of information in
+                            graphic
+                          </p>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="col-md-3">
                     <Link
                       to={{
                         pathname: `/infographics`

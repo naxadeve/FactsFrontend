@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch, withRouter } from "react-router-dom";
 import "../../scss/style.scss";
 
 // components
@@ -47,10 +47,14 @@ class App extends Component {
       })
     ]).then(response => {
       console.log(response);
-      this.setState({siteapi:response[0].data[0].sitedata[0]})
+      this.setState({siteapi:response[0].data.sitedata[0]})
     });
   }
   render() {
+    console.log(this.props);
+    const {location}=this.props;
+    console.log(location && location.pathname);
+    console.log(location && location.pathname && location.pathname.includes('facts'));
     return (
       <div className="page">
         <Router>
