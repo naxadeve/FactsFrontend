@@ -25,10 +25,11 @@ class Footer extends Component {
     // });
   }
   render() {
+    console.log(this.props);
     const {siteapi}=this.props;
     return (
       // <Fade bottom duration={1000} delay={600} distance={"0px"}>
-      <section className="form-section pdt-111 pdb-50">
+      siteapi && (<section className="form-section pdt-111 pdb-50">
         <div className="container">
           <div className="row">
             <div className="col-12 col-md-6">
@@ -167,7 +168,7 @@ class Footer extends Component {
             </div>
           </div>
         </div>
-      </section>
+      </section>)
       // </Fade>
     );
   }

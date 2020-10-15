@@ -27,7 +27,7 @@ class GeographicalCoverage extends Component {
                   <div className="para-center">
                     <p className="body-para">
                       We have carried out research projects in over 68 districts
-                      (out of 75) across Nepal.
+                      (out of 77) across Nepal.
                     </p>
                 </div>
               </div>

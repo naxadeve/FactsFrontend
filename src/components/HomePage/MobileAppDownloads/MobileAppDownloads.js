@@ -12,10 +12,10 @@ class MobileAppDownloads extends Component {
           this.props.techBg ? "tech-bg" : ""
         }`}
       >
-         <img className="bg-case orange" src="./img/IMAGE-shape2.svg"/>
-          <img className="bg-case pink" src="./img/IMAGE-shape4.svg"/>
-          <img className="bg-case sm-pink" src="./img/IMAGE-shape1.svg"/>
-          <img className="bg-case sm-orange" src="./img/IMAGE-shape3.svg"/>
+        <img className="bg-case orange" src="./img/IMAGE-shape2.svg" />
+        <img className="bg-case pink" src="./img/IMAGE-shape4.svg" />
+        <img className="bg-case sm-pink" src="./img/IMAGE-shape1.svg" />
+        <img className="bg-case sm-orange" src="./img/IMAGE-shape3.svg" />
         <div className="container">
           <div className="tech-section-wrap">
             <div className="row no-gutters">
@@ -38,14 +38,24 @@ class MobileAppDownloads extends Component {
                         Available for your smartphone
                       </span>
                       <div className="btn-content">
-                        <a>
+                        {/* <a>
                           <img src="./img/app-store (1).svg" alt="app-store" />
-                        </a>
+                        </a> */}
                         <a>
                           <img
                             src="./img/google-play-badge (1).svg"
                             alt="google-play"
                           />
+                        </a>
+                      </div>
+                    </div>
+                    <div className="btn-wrap mt-md-4">
+                      <span className="caption">
+                        Join Our <a href="https://invite.viber.com/?g2=AQBfeSzB7FMvFEvvkzDEn2CATbHmZBirKrHFsWPRgxS2I%2Bzi7ZcZI%2BrlsFfnw8t0&fbclid=IwAR0Mmk7lCMSoBzC68FAbXAaCAO_zEORE2Dv0vabXcVYL-ojXxKp24QEu4m8&lang=en"><img style={{"height":"33px"}} src="./img/viber-logo.png" alt="viber" /></a> Group To Get Daily Updates.
+                      </span>
+                      <div className="btn-content">
+                        <a href="https://invite.viber.com/?g2=AQBfeSzB7FMvFEvvkzDEn2CATbHmZBirKrHFsWPRgxS2I%2Bzi7ZcZI%2BrlsFfnw8t0&fbclid=IwAR0Mmk7lCMSoBzC68FAbXAaCAO_zEORE2Dv0vabXcVYL-ojXxKp24QEu4m8&lang=en">
+                          <img src="./img/viber-group-qr.png" alt="viber" />
                         </a>
                       </div>
                     </div>
