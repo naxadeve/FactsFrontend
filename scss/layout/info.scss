@@ -1,74 +1,116 @@
 .page{
     .general-info{
-        background: $color-stop1;
+        position: relative;
+        .sphere1{
+            width: 67px;
+            height: 67px;
+            position: absolute;
+            left: -20px;
+            top: 45%;
+        }
+        background: rgba($color-pink, .2);
         .general-info-wrap{
             position: relative;
             @include flex;
-            .sphere1{
-                width: 67px;
-                height: 67px;
+            h3.headline2{
+                padding-bottom: 3rem;
+                @media only screen and (max-width: $lg-desktop){
+                    padding-bottom: 2.5rem;
+                }
+               
             }
+           
             .sphere2{
                 width: 110px;
                 height: 110px;
+                position: absolute;
+                top: 60%;
+                right: -80px;
+                @media only screen and (max-width: $md-desktop){
+                    right: -50px;
+                }
+                @media only screen and (max-width: $md-tab){
+                    right: 0;
+                }
             }
             .sphere3{
                 width: 29px;
                 height: 29px;
                 opacity: 0.2;
+                position: absolute;
+                top: -50px;
+                right: -150px;
+                @media only screen and (max-width: 1440px){
+                    right: 0px;
+                }
             }
             .sphere4{
                 width: 50px;
                 height: 50px;
                 opacity: 0.15;
+                position: absolute;
+                right: 60%;
+                bottom: -40px;
             }
-            .fact-info-wrap{
+            .fact-info-wrap, .public-poll-info-wrap{
                 height: 100%;
-                h3{
-                    padding-bottom: 2.344rem;
+                @media only screen and (max-width: $lg-tab){
+                    margin-bottom: 50px;
+                    height: auto;
+                    text-align:center;
                 }
             }
-          
+
             .public-poll-info-wrap{
-                h3{
-                    padding-bottom: 2.344rem;
-                }   
+                @media only screen and (max-width: $lg-tab){
+                    margin-bottom: 0;
+                }
             }
+
             .poll-link{
                 display: block;
                 width: 100%;
-                height: calc(100% - 70px);
+                height: calc(100% - 25%);
             }
             .fact-info{
                 height: 100%;
+                @include flex;
                 background: $color-white;
                 @include border-radius-circle(10px);
                 padding: 2.813rem 2.5rem;
+                @media only screen and (max-width: $mb-xl ){
+                    height: auto;
+                }
                 .fact-info-img{
                     height: 100%;
-                    @include flex;
-                    align-items: center;
-                    justify-content: center;
                     figure{
                         margin-bottom: 0rem !important;
+                        height: 100%;
+                        width: 100%;
                         img{
-                            width: 142px;
+                           width: 100%;
+                           height: 100%;
+                           object-fit: cover;
                         }
                     }
                 }
                 .fact-info-content{
                     height: 100%; 
-                    display: flex;
-                    @include flexcenter;
-                    align-items: center;
                     .fact-info-content-wrap{
                         .center{
+                            @media only screen and (max-width: $lg-tab){
+                                margin-top: 1.5rem;
+                            }
                             span{
                                 display: block;
                             }
                             p{
+                                @include line-clamp(4);
                                 max-width: 345px;
-                                margin: 1.125rem 0;
+                                margin: 1.25rem 0;
+                                @media only screen and (max-width: $md-desktop){
+                                    margin: 1rem auto;
+                                }
                             }
                         }
                     }
@@ -77,6 +119,7 @@
 
             .public-poll-info{
                 background: $color-white;
+                height: 100%;
                 @include border-radius-circle(10px);
                 .public-poll-flexcenter{
                     padding: 2.344rem 2.5rem;
@@ -85,7 +128,20 @@
                     }
                     h6{
                         max-width: 300px;
-                        margin: .938rem 0;
+                        margin: 1.25rem 0;
+                        font-size: 1.325rem;
+                        line-height: 1.75rem;
+                        @media only screen and (max-width: $lg-desktop){
+                            font-size: 1.125rem;
+                            line-height: 1.5rem;
+                        }
+                        @media only screen and (max-width: $md-desktop){
+                            font-size: .938rem;
+                            line-height: 1.25rem;
+                        }
+                        @media only screen and (max-width: $lg-tab){
+                           max-width: 100%;
+                        }
                     }
                     .btn-vote{
                         font-size: .688rem;
@@ -99,309 +155,6 @@
                     }
                 }
             } 
-        }
-    }
-}
-
-/* less than 991px */
-@media only screen and (max-width: $tab-xl) {
-    /* General-Info start */
-    .page{
-        .general-info{
-            .general-info-wrap {
-                .fact-info-wrap{
-                    h3{
-                        padding-bottom: 1.325rem;
-                    }
-                }
-                .public-poll-info-wrap{
-                    h3 {
-                        padding-bottom: 1.325rem;
-                    }
-                } 
-                .fact-info{
-                    padding: 2rem 1.5rem;
-                    .fact-info-content{
-                        .fact-info-content-wrap{
-                            .center{
-                                p{
-                                    margin: .625rem 0;
-                                }
-                            }
-                        }
-                    }
-                }
-                .public-poll-info {
-                    .public-poll-flexcenter{
-                        h6{
-                            margin: .625rem 0;
-                            max-width: 100%;        
-                        }
-                        .btn-vote {
-                            margin-top: 1.325rem;
-                            padding: .28rem 1.166rem;
-                        }
-                    }
-                }
-            } 
-        }
-    }
-}
-
-/* less than 991px */
-@media only screen and (max-width: $mb-xl) {
-    /* General-Info start */
-    .page{
-        .general-info{
-            .general-info-wrap {
-                .fact-info-wrap{
-                    margin-bottom: 4rem;
-                    h3{
-                        padding-bottom: 1.125rem;
-                        text-align: center;
-                    }
-                }
-                .public-poll-info-wrap{
-                    h3 {
-                        text-align: center;
-                        padding-bottom: 1.125rem;
-                    }
-                } 
-                .fact-info{
-                    .fact-info-content{
-                        .fact-info-content-wrap{
-                            .center{
-                                margin-top: 1.25rem;
-                                text-align: center;
-                                p{
-                                    margin: .875rem 0;
-                                }
-                            }
-                        }
-                    }
-                }
-                .public-poll-info {
-                    min-height: auto !important;
-                    .public-poll-flexcenter{
-                        text-align: center;
-                        h6{
-                            margin: .625rem 0;
-                            max-width: 100%;        
-                        }
-                    }
-                }
-            } 
-        }
-    }
-}
-
-@media only screen and (max-width: $mb-xl){
-    .page{
-        .general-info{
-            .general-info-wrap{
-                .sphere1{
-                    left: -23%;
-                    bottom: 80%;
-                }
-                .sphere2{
-                    right: -8%;
-                    bottom: 2%;
-                }
-                .sphere3{
-                    right: -10%;
-                    top: -8%;
-                }
-                .sphere4{
-                    left: 9%;   
-                    bottom: 38%;
-                }
-            }
-        }
-    }
-}
-
-/* less than 575px; */
-@media only screen and (max-width: $mb-sm){
-    /* General-Info start */
-    .page{
-        .general-info{
-            .general-info-wrap{
-                .sphere1{
-                    left: -12%;
-                    bottom: 80%;
-                     width: 50px;
-                    height: 50px;
-                }
-                .sphere2{
-                    right: -6%;
-                    bottom: 2%;
-                    width: 80px;
-                    height: 80px;
-                }
-                .sphere3{
-                    right: -2%;
-                    top: -10%;
-                    width: 25px;
-                    height: 25px;
-                }
-                .sphere4{
-                    left: 9%;   
-                    bottom: 40%;
-                    width: 40px;
-                    height: 40px;
-                }
-                .fact-info{
-                    .fact-info-img {
-                        figure {
-                            img{
-                                width: 120px;
-                            }
-                        }
-                    }
-                    
-                    .fact-info-content{
-                        .fact-info-content-wrap{
-                            .center{
-                                p{
-                                    margin: .625rem 0;
-                                }
-                            }
-                        }
-                    }
-                }
-            }     
-        }
-   }
-
-}
-
-/* less than 376px; */
-@media only screen and (max-width: $mb-xs){
-    /* General-Info start */
-    .page{
-        .general-info{
-            .general-info-wrap{
-                .sphere1{
-                    left: -26%;
-                    bottom: 80%;
-                }
-                .sphere2{
-                    right: -11%;
-                    bottom: 2%;
-                }
-                .sphere3{
-                    right: -11%;
-                    top: -9%;
-                }
-                .sphere4{
-                    left: 15%;   
-                    bottom: 41%;
-                }
-            }     
-        }
-    }       
-}
-
-@media only screen and (min-width: $md-tab){
-    .page{
-        .general-info{
-            .general-info-wrap{
-                .sphere1{
-                    left: -19%;
-                    bottom: 50%;
-                }
-                .sphere2{
-                    right: -7%;
-                    bottom: 6%;
-                }
-                .sphere3{
-                    right: -9%;
-                    top: -20%;
-                }
-                .sphere4{
-                    left: 9%;
-                    bottom: -9%;
-                }
-            }
-        }
-    }
-}
-
-@media only screen and (min-width: $ls-tab){
-    .page{
-        .general-info{
-            .general-info-wrap{
-                .sphere1{
-                    left: -13%;
-                    bottom: 50%;
-                }
-                .sphere2{
-                    right: -5%;
-                    bottom: 6%;
-                }
-                .sphere3{
-                    right: -5%;
-                    top: -17%;
-                }
-                .sphere4{
-                    left: 9%;
-                    bottom: -5%;
-                }
-            }
-        }
-    }
-}
-
-@media only screen and (min-width: $desktop){
-    .page{
-        .general-info{
-            .general-info-wrap{
-                .sphere1{
-                    left: -11%;
-                    bottom: 53%;
-                }
-                .sphere2{
-                    right: -5%;
-                    bottom: 6%;
-                }
-                .sphere3{
-                    right: -6%;
-                    top: -15%;
-                }
-                .sphere4{
-                    width: 50px;
-                    height: 50px;
-                    left: 9%;
-                    bottom: -9%;
-                }
-            }
-        }
-    }
-}
-
-@media only screen and (min-width: $md-desktop){
-    .page{
-        .general-info{
-            .general-info-wrap{
-                .sphere1{
-                    left: -19%;
-                    bottom: 53%;
-                }
-                .sphere2{
-                    right: 5%;
-                    bottom: 6%;
-                }
-                .sphere3{
-                    right: -6%;
-                    top: -15%;
-                }
-                .sphere4{
-                    width: 50px;
-                    height: 50px;
-                    left: 9%;
-                    bottom: -9%;
-                }
-            }
         }
     }
 }

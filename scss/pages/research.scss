@@ -5,26 +5,61 @@
                 height: 100%;
                 @include flex;
                 align-items: center;
+               
                 .title-center{
-                    max-width: 410px;
+                    max-width: 460px;
                     span{
                         display: block;
-                        padding-bottom: 23px;
+                        padding-bottom: 30px;
                         letter-spacing: 3px;
                     }
                     h3{
                         margin-bottom: 0 !important;
                     }
+                    @media only screen and (max-width: $lg-desktop){
+                        max-width: 410px;
+                        span{
+                            padding-bottom: 20px;
+                        }
+                    }
+                    @media only screen and (max-width: $md-desktop){
+                        max-width: 318px;
+                        padding-bottom: 15px;
+                    }
+                    @media only screen and (max-width: $lg-tab){
+                        text-align: center;
+                        margin: auto;
+                        max-width: 400px;
+                    }
                 }
             }
             .image-wrap{
                 img{
-                    width: 418px;
+                    width: 80%;
+                }
+                @media only screen and (max-width: $lg-desktop){
+                    img{
+                        width: 70%;
+                    }
+                }
+                @media only screen and (max-width: $lg-tab){
+                    text-align: center;
+                    margin-top: 3rem;
+                    img{
+                        width: 300px;
+
+                    }
                 }
                 
                 &.service3-img-wrap{
                     img{
-                        width: 543px;
+                        width: 550px;
+                    }
+                    @media only screen and (max-width: $md-desktop){
+                        text-align: center;
+                        img{
+                            width: 400px; 
+                        }
                     }
                 }
             }
@@ -37,21 +72,51 @@
                 padding-top: 3.125rem;
                 .info-center{
                     h3{
-                        max-width: 294px;
+                        max-width: 400px;
                         margin-bottom: 2.375rem;
+                        @media only screen and (max-width: $lg-desktop){
+                            max-width: 300px;
+                        }
+                        @media only screen and (max-width: $md-desktop){
+                            max-width: 270px;
+                            margin-bottom: 1.75rem;
+                        }
+                        @media only screen and (max-width: $lg-tab){
+                            text-align: center;
+                            margin: 0 auto 1.75rem;
+                            max-width: 600px;
+                        }
                     }
                     p{
                         margin-bottom: 0 !important;
-                        max-width: 285px;
+                        max-width: 330px;
+                        @media only screen and (max-width: $md-desktop){
+                            max-width: 280px;
+                        }
+                        @media only screen and (max-width: $lg-tab){
+                           margin: auto;
+                           text-align: center;
+                           max-width: 500px
+                        }
                     }
                 }
             }
             .info-lists{
-                @include border-radius-circle(2px);
+                @include border-radius-circle(20px);
                 @include boxshadow($boxshadow: 0px 15px 20px $color-box-shadow);
+                @media only screen and (max-width: $lg-tab){
+                    max-width: 450px;
+                    margin: 2.5rem auto;
+                }
                 .info-list-wrap{
-                    padding: 3.125rem 3.438rem 2.813rem 2.5rem;
+                    padding: 5rem 4rem;
                     text-decoration: none;
+                    @media only screen and (max-width: $lg-desktop){
+                        padding: 4rem 3rem;
+                    }
+                    @media only screen and (max-width: $md-desktop){
+                        padding: 3rem 2rem;
+                    }
                     .list-item{
                         padding-left: 30px;
                         margin-bottom: 1.5rem;
@@ -61,6 +126,9 @@
                         text-transform: capitalize;
                         &:last-child{
                             margin-bottom: 0;
+                        }
+                        @media only screen and (max-width: $md-desktop){
+                            margin-bottom: 1.25rem;
                         }
                     }
                 }
@@ -72,11 +140,12 @@
                     padding-top: 0;
                     .info-center{
                         max-width: 386px;
+                        @media only screen and (max-width: $lg-tab){
+                            margin: auto;
+                            text-align: center;
+                        }
                         .service2-span{
                             padding-bottom: 50px;
-                        }
-                        h3{
-                            max-width: 100%;
                         }
                         p{
                             max-width: 100%;
@@ -89,38 +158,95 @@
                 }
                 .lists-heading{
                     .list-wrap{
-                        width: 100%;
+                        width: 80%;
+                        @media only screen and (max-width: $md-desktop){
+                            width: 60%;
+                        }
+                        @media only screen and (max-width: $lg-tab){
+                           margin: auto;
+                            padding-top: 4rem;
+                        }
                         .list-item{
                             @include flex_start;
                             align-items: center;
                             @include border-bottom(1px, solid, $color-borderbtm);
                             &:nth-child(1){
-                                padding-bottom: 1.406rem;
+                                padding-bottom: 1.325rem;
                             }
                             &:nth-child(2){
-                                padding: 1.406rem 0;
+                                padding: 1.325rem 0;
                             }
                             &:nth-child(3){
-                                padding-top: 1.406rem;
+                                padding-top: 1.325rem;
                                 @include border-bottom(0px, solid, transparent);
                                 div{
                                     span{
-                                        max-width: 120px;
+                                        max-width: 155px;
                                     }
                                 }
                             }
                             div{
                                 @include flexcenter;
                                 span{
-                                    max-width: 165px;
+                                    max-width: 200px;
                                 }
                             }
                             figure{
                                 @include flex;
                                 align-items: center;
-                                flex: 0 0 62px;
-                                margin-right: 1.125rem;
-                                margin-bottom: 0px !important;
+                                flex: 0 0 80px;
+                                margin-right: 2.25rem;
+                                margin-bottom: 0;
+                            }
+                            @media only screen and (max-width: $lg-desktop){
+                                &:nth-child(1){
+                                    padding-bottom: 1rem;
+                                }
+                                &:nth-child(2){
+                                    padding: 1rem 0;
+                                    
+                                }
+                                &:nth-child(3){
+                                    padding-top: 1rem;
+                                    div{
+                                        span{
+                                            max-width: 120px;
+                                        }
+                                    }
+                                }
+                                div{
+                                    span{
+                                        max-width: 150px;
+                                    }
+                                }
+                                figure{
+                                    flex: 0 0 62px;
+                                    margin-right: 1.5rem;
+                                }
+                            }
+                            @media only screen and (max-width: $md-desktop){
+                                div{
+                                    span{
+                                        max-width: 120px;
+                                    }
+                                }
+                                figure{
+                                    flex: 0 0 55px;
+                                }
+                            }
+                            @media only screen and (max-width: $lg-tab){
+                                @include flexcenter;
+                                div{
+                                    span{
+                                        text-align:center;
+                                    }
+                                }
+                            }
+                            @media only screen and (max-width:$mb-xs){
+                                figure{
+                                    margin-right: 0;
+                                    margin-bottom: 1rem;
+                                }
                             }
                         }
                     }
@@ -131,363 +257,68 @@
             .content-wrap{
                 .heading-wrap{  
                     .span-center{
-                        padding-bottom: 2.375rem;
+                        padding-bottom: 2.875rem;
                         @include flexcenter;
+                        @media only screen and (max-width: $lg-desktop){
+                            padding-bottom: 2.5rem;
+                        }
+                        @media only screen and (max-width: $md-desktop){
+                            padding-bottom: 2rem;
+                        }
                         h3{
                             max-width: 620px;
                             text-align: center;
+                            @media only screen and (max-width: $lg-desktop){
+                                max-width: 560px;
+                            }
+                            @media only screen and (max-width: $md-desktop){
+                                max-width: 460px;
+                            }
+                            @media only screen and (max-width: $lg-tab){
+                                margin: auto;
+                            }
                         }
                     }
                     p{
                         margin: 0 auto;
-                        max-width: 850px;
+                        max-width: 1050px;
                         text-align: center;
-                        padding-bottom: 3.281rem;
-                        line-height: 1.869rem;
+                        padding-bottom: 4.5rem;
+                        line-height: 2rem;
+                        font-size: 1.25rem;
+                        @media only screen and (max-width: $lg-desktop){
+                            line-height: 1.75rem;
+                            max-width: 850px;
+                            font-size: 1rem;
+                            padding-bottom: 3.5rem;
+                        }
+                        @media only screen and (max-width:$md-desktop){
+                            line-height: 1.25rem;
+                            font-size: .875rem;
+                            padding-bottom: 3rem;
+                            max-width: 750px;
+                        }
+                        @media only screen and (max-width: $lg-tab){
+                            margin: auto;
+                        }
                     }
                 }
                 .para-width-first{
-                    max-width: 430px;
-                }
-                .para-width-second{
-                    max-width: 448px;
-                }
-            }
-        }
-    }
-}
-
-/* less than 991px */
-@media only screen and (max-width: $tab-xl) {
-    .page{
-       .banner{
-           .banner-content-wrap{
-                .title-wrap{
-                    .title-center{
-                        max-width: 275px;
-                        span{
-                            padding-bottom: 16px;
-                        } 
-                    }
-                }
-           }
-       } 
-        .info-content {
-            .content-wrap{
-                .info-lists {
-                    .info-list-wrap{
-                        padding: 3rem 3rem 2.5rem 2rem;
-                        font-size: .8rem !important;
-                        .list-item{
-                            margin-bottom: 1rem;
-                        }
-                    }
-                }
-            }
-            &.service-second{
-                .content-wrap{
-                    .info-heading{
-                        .info-center{
-                            max-width: 386px;
-                            .service2-span{
-                                padding-bottom: 50px;
-                            }
-                            h3{
-                                margin-bottom: 1.275rem;
-                            }
-                            p{
-                                &:nth-child(3){
-                                    padding-top: 12px;
-                                }
-                            }
-                        }
-                    }
-                    .lists-heading{
-                        .list-wrap{
-                            .list-item{
-                                &:nth-child(1){
-                                    padding-bottom: 1.2rem;
-                                }
-                                &:nth-child(2){
-                                    padding: 1.2rem 0;
-                                }
-                                &:nth-child(3){
-                                    padding-top: 1.2rem;
-                                }
-                                figure{
-                                    flex: 0 0 52px;
-                                }
-                            }
-                        }
-                    }  
-                }
-            }
-            &.service-third{
-                .content-wrap{
-                    .heading-wrap{  
-                        .span-center{
-                            padding-bottom: 1.875rem;
-                            h3{
-                                max-width: 450px;
-                            }
-                        }
-                        p{
-                            max-width: 450px;
-                            padding-bottom: 2.281rem;
-                            line-height: 1.5rem;
-                        }
-                    }
-                }
-            }
-        }  
-    }  
-}
-
-/* less than 767px */
-@media only screen and (max-width: $mb-xl) {
-    .page{
-        .pdt-40{
-            padding-top: 1.25rem !important;
-        }
-        .banner{
-            .banner-content-wrap{
-                .title-wrap{
-                    justify-content: center;
-                    .title-center{
-                        max-width: 450px;
+                    max-width: 75%;
+                    @media only screen and (max-width: $mb-xl){
                         text-align: center;
+                        margin: auto;
+                        padding-bottom: 2rem;
                     }
                 }
-                .image-wrap{
-                    margin-top: 30px;
-                    text-align: center;
-                    img{
-                        width: 380px;
-                    }
-                }
-                .service3-img-wrap{
-                    img{
-                        min-height: auto;
-                    }
-                }
-            }
-        }
-        
-        .info-content{
-            padding: 0 50px;
-            .content-wrap{
-                .info-heading{
-                    padding-top: 0;
-                    padding-bottom: 50px;
-                    .info-center{
+                .para-width-second{
+                    max-width: 80%;
+                    @media only screen and (max-width: $mb-xl){
                         text-align: center;
-                        h3{
-                            max-width: 450px;
-                            margin-bottom: 1rem;
-                        }
-                        p{
-                            margin: 0 auto;
-                            max-width: 350px;
-                        }
-                    }
-                }
-                .info-lists {
-                    .info-list-wrap {
-                        .list-item{
-                            background-size: 16px 16px;
-                            padding-left: 25px;
-                        }
-                    }
-                }
-            }     
-            &.service-second{ 
-                .content-wrap{ 
-                    .info-heading{
-                        @include flex;
-                        justify-content: center;
-                    }
-                    .lists-heading{
-                        .list-wrap {
-                            .list-item{
-                                @include flexcenter;
-                                div{
-                                    @include flex;
-                                    align-items: center;
-                                }
-                                figure{
-                                    flex: 0 0 55px;
-                                    margin-right: 5%;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            &.service-third{
-                .content-wrap{
-                    .heading-wrap{
-                        .span-center{
-                            padding-bottom: 1.375rem;
-                        }
-                        p{
-                            padding-bottom: 2rem;
-                        }
-                    }
-                }  
-                .para-width-first{
-                    text-align: center;
-                    margin: 0 auto;
-                }
-                .para-width-second{
-                    text-align: center;
-                    margin: 0 auto;
-                    margin-top: 20px;
-                }
-            }
-        }
-    }
-} 
-
-/* less than 575px */
-@media only screen and (max-width: $mb-sm){
-    .page{
-        .banner{
-            padding: 0 30px;
-            .banner-content-wrap{
-                .title-wrap{
-                    height: 100%;
-                    @include flexcenter;
-                    align-items: center;
-                    .title-center{
-                        span{
-                            padding-bottom: 10px;
-                        }
-                    }
-                }
-                .image-wrap{
-                    img{
-                        width: 320px;
-                    }
-                }
-            }
-        }
-        .info-content{
-            .content-wrap{
-                .info-heading{
-                    @include flexcenter;
-                    padding-bottom: 40px;
-                    .info-center{
-                        max-width: 400px;
-                        h3{
-                            margin-bottom: 1rem;
-                        }
-                        p{
-                            max-width: 320px;
-                        }
-                    }
-                }
-                .info-lists {
-                    .info-list-wrap {
-                        padding: 2.125rem 2.438rem 1.813rem 1.5rem;
-                        .list-item{
-                            margin-bottom: .875rem;
-                        }
-                    }
-                }
-            } 
-            &.service-second{ 
-                .content-wrap{ 
-                    .lists-heading{
-                        .list-wrap {
-                            .list-item{
-                                &:nth-child(1){
-                                    padding-bottom: 1.125rem;
-                                }
-                                &:nth-child(2){
-                                    padding: 1.125rem 0;
-                                }
-                                &:nth-child(3){
-                                    padding-top: 1.125rem;
-                                }
-                                figure{
-                                    flex: 0 0 50px;
-                                    margin-right: 3%;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            &.service-third{
-                .content-wrap{
-                    .heading-wrap{
-                        .span-center{
-                            padding-bottom: .625rem;
-                            h3{
-                                max-width: 420px;
-                            }
-                        }
-                        p{
-                            max-width: 350px;
-                            padding-bottom: 2rem;
-                        }
-                    }
-                }  
-                .para-width-first{
-                    text-align: center;
-                    margin: 0 auto;
-                }
-                .para-width-second{
-                    text-align: center;
-                    margin: 0 auto;
-                    margin-top: 20px;
-                }
-            }
-        }
-    }
-}
-
-/* less than 376px */
-@media only screen and (max-width: $mb-xs){
-    .page{
-        .banner{
-            .banner-content-wrap{
-                .image-wrap{
-                    img{
-                        width: 250px !important;
-                    }
-                }
-            }
-        }
-        .info-content{
-            &.service-second{ 
-                .content-wrap{ 
-                    .info-heading {
-                        .info-center{
-                            p {
-                                max-width: 250px;
-                            }
-                        }
-                    }
-                    .lists-heading{
-                        .list-wrap {
-                            .list-item{
-                                flex-direction: column;
-                                figure{
-                                    flex: 0 0 48px;
-                                    max-width: 48px;
-                                    margin-right: 0;
-                                    margin-bottom: 6px !important;
-                                }
-                                span{
-                                    text-align: center;
-                                }
-                            }
-                        }
+                        margin: auto;
                     }
                 }
             }
         }
     }
 }
-

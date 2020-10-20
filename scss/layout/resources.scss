@@ -2,20 +2,36 @@
     .resources-section-wrap{
         .resources-title{
             h3{
-                padding-bottom: .938rem;
-            }
-            p{
                 padding-bottom: 1.5rem;
+                @media only screen and (max-width: $lg-desktop){
+                    padding-bottom: 1.25rem;
+                }
+            }
+            @media only screen and (max-width: $lg-tab){
+                text-align: center;             
             }
         }
         .resources-grid-content{
+            margin-top: 2.5rem;
+            @media only screen and (max-width: $lg-desktop){
+                margin-top: 2rem;
+            }
+            @media only screen and (max-width: $lg-tab){
+                margin-top: 0;
+            }
             .grid-container{
                 .grid-col{
                     margin-bottom: 40px;
                     .grid-content-wrap{
                         .grid-image{        
                             img{
-                                width: 190px;
+                                width: 220px;
+                                @media only screen and (max-width: $lg-desktop){
+                                    width: 180px;
+                                }
+                                @media only screen and (max-width: $md-desktop){
+                                    width: 160px;
+                                }
                             }
                         }
                         .grid-content{
@@ -25,195 +41,45 @@
                             }
                             .para-center{
                                 p{
-                                    margin-top: .844rem;
+                                    margin-top: 1.25rem;
                                     max-width: 275px;
+                                    @media only screen and (max-width: $lg-desktop){
+                                        margin-top: 1rem;
+                                    }
+                                    @media only screen and (max-width: $md-desktop){
+                                        margin-top: .785rem;
+                                    }
                                 }
                             }
                         }
                         .grid-button{ 
                             position: absolute;
-                            bottom: 0;
-                            margin-top: 1rem;                           
+                            bottom: -10px;                           
                             button{
                                 @include typo($font-family, 400, 1.25);
                                 @include button($color-red, $color-white);
                                 @include border-radius-circle(5px);
                                 @include border(1px, solid, $color-red);
-                                font-size: 0.625rem;
                                 width: 90px;
                                 padding: 5px 0;
+                                font-size: .875rem;
                                 &:hover {
                                     background: lighten($color-red, 40%);
                                 }
                                 &:nth-child(1){
                                     margin-right: 15px;
                                 }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-/* less than 991px; */
-@media only screen and (max-width: $tab-xl){
-    .resources-section{
-        .resources-section-wrap{
-            .resources-title{
-                h3{
-                    padding-bottom: 0.738rem;
-                }
-            }
-            .resources-grid-content{
-                .grid-container{
-                    .grid-col{
-                        .grid-content-wrap{
-                            .grid-image{        
-                                img{
-                                    width: 140px;
-                                }
-                            }
-                            .grid-content{
-                                h4{
-                                    // max-width: 170px;
-                                }
-                            }
-                            .grid-button{                           
-                                button{
-                                    width: 70px;
-                                    padding: 4px 0;
-                                    &:nth-child(1){
-                                        margin-right: 5px;
-                                    }
+                                @media only screen and (max-width: $md-desktop){
+                                    font-size: .75rem;
                                 }
                             }
                         }
                     }
-                }
-            }
-        }
-    }
-}
-
-/* less than 767px; */
-@media only screen and (max-width: $mb-xl){
-    .resources-section{
-        .resources-section-wrap{
-            .resources-title{
-                text-align: center;
-                p{
-                    margin: 0 auto;
-                    max-width: 300px;
-                }
-            }
-            .resources-grid-content{
-                .grid-container{
-                    .grid-col{
-                        margin-bottom: 50px;
+                    @media only screen and (max-width: $lg-tab){
+                        margin-top: 3rem;
                         .grid-content-wrap{
+                            @include flexvr;
                             text-align: center;
-                            .grid-image{        
-                                img{
-                                    width: 130px;
-                                }
-                            }
-                            .grid-content{
-                                margin-top: 0;
-                                h4{
-                                    margin-top: .3rem;
-                                    text-align: center;
-                                }
-                                .para-center{
-                                    @include flexcenter;
-                                    p{
-                                        margin-top: .3rem;
-                                    }
-                                }
-                            }
-                            .grid-button{  
-                                margin-top: .875rem; 
-                                display: flex;
-                                align-items: center;
-                                margin: 0 auto;
-                                justify-content: center;
-                                width: 100%;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-/* less than 575px; */
-@media only screen and (max-width: $mb-sm){
-    .resources-section{
-        .resources-section-wrap{
-            .resources-title{
-                p{
-                    max-width: 250px;
-                }
-            }
-            .resources-grid-content{
-                .grid-container {
-                    .grid-col {
-                        .grid-content-wrap {
-                            .grid-image{
-                                img{
-                                    width: 110px;
-                                }
-                            }
-                        }
-                    }
-                }
-            } 
-        }
-    }
-}
-
-/* less than 376px; */
-@media only screen and (max-width: $mb-xs){
-    .resources-section{
-        .resources-section-wrap{
-            .resources-title{
-                p{
-                    margin-bottom: .875rem;
-                }
-            } 
-            .resources-grid-content{
-                .grid-container {
-                    .grid-col{
-                       .grid-content-wrap{
-                            .grid-image{
-                                img{
-                                    max-width: 115px;
-                                }
-                            }
-                        }
-                    } 
-                }
-            }
-        }
-    }   
-}
-
-/* more than 1440px; */
-@media only screen and (min-width: $md-desktop){
-    .resources-section{
-        .resources-section-wrap{
-            .resources-grid-content{
-                .grid-container{
-                    .grid-col{
-                        .grid-content-wrap{
-                            .grid-button{                             
-                                button{
-                                    padding: 7px 0;
-                                    font-size: 0.75rem;
-                                }
-                            }
                         }
                     }
                 }

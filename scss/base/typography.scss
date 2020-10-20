@@ -47,6 +47,13 @@ Version:
      color: $color-primary;
      text-align: left;
      background-color: $color-white;
+     @media only screen and (max-width: $lg-desktop) {
+        font-size: .785rem;
+    }
+    @media only screen and (max-width: $md-desktop) {
+        font-size: .685rem;
+        line-height: 1.125rem;
+    }
  }
  
  h1,

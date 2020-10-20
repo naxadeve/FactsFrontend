@@ -24,6 +24,8 @@ $trans-white: #FFFFFF00;
 
 $color-stop1: rgba(250,235, 239, 1);
 $color-stop2: #FFFFFF;
+$color-stop3: #faebee;
+$color-stop4: rgba($color-pink, .37);
 $logo-bg: #9F2F35;
 $color-blue: #29B6F6;
 $color-dropdown: rgb(251, 224, 225);
@@ -41,16 +43,17 @@ $color-linkedin: #0077B7;
 $font-family: 'Poppins', sans-serif;
 
 //Break point
+// Breakpoints
 $mb-xs: 376px; 
 $mb-sm: 575px;
 $mb-lg: 576px;
 $mb-xl: 767px;
 $md-tab: 768px;
-$lg-tab: 992px;
+$lg-tab: 991px;
 $ls-tab: 1024px;
 $desktop: 1200px;
 $md-desktop: 1440px;
-
+$lg-desktop: 1560px;
 $tab-xl: 991px;
 $mb-md: 481px;
 

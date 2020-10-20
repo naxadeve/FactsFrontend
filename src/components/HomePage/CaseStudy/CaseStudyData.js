@@ -15,7 +15,7 @@ class CaseStudyData extends Component {
               key % 2 != 0 ? (
                 <div className="case-study-wrap pdt-117">
                   <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-lg-6 col-md-12">
                       <div className="case-study-image">
                         <figure className="figure-case-img left-img-sphere">
                             <img class="bg-case orange" src="./img/IMAGE-shape2.svg" />
@@ -26,7 +26,7 @@ class CaseStudyData extends Component {
                         </figure>
                       </div>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-lg-6 col-md-12">
                       <div className="case-study-content">
                         <div className="case-study-content-wrap">
                           <span className="sub-caption">
@@ -68,7 +68,7 @@ class CaseStudyData extends Component {
               ) : (
                 <div className="case-study-wrap">
                   <div className="row">
-                    <div className="order-2 order-sm-2 order-md-1 col-md-6">
+                    <div className="order-2 order-md-2 order-lg-1 col-lg-6 col-md-12">
                       <div className="case-study-content">
                         <div className="case-study-content-wrap">
                           <span className="sub-caption">
@@ -110,7 +110,7 @@ class CaseStudyData extends Component {
                       </div>
                     </div>
 
-                    <div className="order-1 order-sm-1 order-md-2 col-md-6">
+                    <div className="order-1 order-md-1 order-lg-2 col-lg-6 col-md-12">
                       <div className="case-study-image">
                         <figure className="figure-case-img right-img-sphere">
                           <img class="bg-case orange" src="./img/IMAGE-shape2.svg" />

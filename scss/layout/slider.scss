@@ -1,6 +1,6 @@
 .page{
     .slider-section{
-        @include linear-gradient(180deg, $color-stop1, $color-stop2);
+        @include linear-gradient(180deg, $color-stop3, $color-stop2);
         .caption{
             text-align: left;
             display: block;

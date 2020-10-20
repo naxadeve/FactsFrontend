@@ -25,7 +25,7 @@ class Services extends Component {
       <section className="grid-section-whole pdt-113 pdb-134">
         <div className="container">
           <div className="grid-section">
-            <div className="grid-title-wrap pdb-85">
+            <div className="grid-title-wrap">
               <span className="sec-caption">SERVICES</span>
               <h3 className="headline2">
                 Bridging information asymmetry through real, transparent data &
@@ -34,8 +34,8 @@ class Services extends Component {
             </div>
             <div className="grid-content">
               <div className="grid-container">
-                <div className="row">
-                  <div className="col-md-3">
+                <div className="row row-center">
+                  <div className="col-lg-4 col-md-6 col-sm-12">
                     <Link
                       to={{
                         pathname: `/researchdata`
@@ -69,7 +69,7 @@ class Services extends Component {
                       </div>
                     </Link>
                   </div>
-                  <div className="col-md-3">
+                  <div className="col-lg-4 col-md-6 col-sm-12">
                     <Link
                       to={{
                         pathname: `/strategycontent`
@@ -103,7 +103,7 @@ class Services extends Component {
                       </div>
                     </Link>
                   </div>
-                  <div className="col-md-3">
+                  <div className="col-lg-4 col-md-6 col-sm-12">
                     <Link
                       to={{
                         pathname: `/infographics`
@@ -137,40 +137,7 @@ class Services extends Component {
                       </div>
                     </Link>
                   </div>
-                  <div className="col-md-3">
-                    <Link
-                      to={{
-                        pathname: `/infographics`
-                      }}
-                    >
-                      <div className="grid-col mb-0">
-                        <figure className="fig bg-alter-left">
-                          <img
-                            className="bg-img bg-lg-img"
-                            src="./img/ICON-shape2.svg"
-                          />
-                          <img
-                            className="grid-img"
-                            src="./img/Services-icon-3.svg"
-                            alt="file searcrhing"
-                          />
-                          <img
-                            className="bg-img bg-sm-img"
-                            src="./img/ICON-shape1.svg"
-                          ></img>
-                        </figure>
-                        <h4 className="headline4">
-                          Infographics <br></br> Design
-                        </h4>
-                        <div className="para-center">
-                          <p className="body-para">
-                            Supplying you with relevant of information in
-                            graphic
-                          </p>
-                        </div>
-                      </div>
-                    </Link>
-                  </div>
+                
                 </div>
               </div>
             </div>

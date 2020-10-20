@@ -44,7 +44,7 @@ class SingleCaseStudy extends Component {
               <div className="container">
                 <div className="case-study-wrap">
                   <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-lg-6 col-md-12">
                       <div className="case-study-image">
                         <figure className="figure-case-img left-img-sphere">
                         <img className="bg-case-front orange" src="./img/IMAGE-shape2.svg"/>
@@ -55,7 +55,7 @@ class SingleCaseStudy extends Component {
                         </figure>
                       </div>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-lg-6 col-md-12">
                       <div className="case-study-content">
                         <div className="case-study-content-wrap">
                           <span className="sub-caption">

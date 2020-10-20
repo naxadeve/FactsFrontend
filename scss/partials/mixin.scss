@@ -151,6 +151,7 @@
   transform: translate(50%, 0%);
 }
 
+
 @mixin translatey {
   position: absolute;
   top: 50%;
@@ -183,10 +184,20 @@
   background: linear-gradient($direction, $color-stop1, $color-stop2);
 }
 
+@mixin linear-gradientI($direction, $color-stop3, $color-stop2) {
+  background: linear-gradientI($direction, $color-stop3, $color-stop2);
+}
+
+@mixin linear-gradientI($direction, $color-stop4, $color-stop2) {
+  background: linear-gradientI($direction, $color-stop4, $color-stop2);
+}
+
+
 @mixin border-bottom($width, $style, $color) {
   border-bottom-width: $width;
   border-bottom-style: $style;
-  border-bottom-color: $color;
+  border-bottom-color: $color; 
+  // #faebee;
 }
 
 @mixin border($width, $style, $color) {
@@ -241,4 +252,35 @@
 
 @mixin linear-gradient-footer($direction, $color-formlabel, $color-darkred) {
   background: linear-gradient($direction, $color-formlabel, $color-darkred);
+}
+
+
+@mixin ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin line-clamp($value) {
+  display: -webkit-box;
+  -webkit-line-clamp: $value;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@-webkit-keyframes opacity {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes opacity{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
