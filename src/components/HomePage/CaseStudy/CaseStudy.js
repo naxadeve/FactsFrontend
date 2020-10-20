@@ -41,7 +41,7 @@ class CaseStudy extends Component {
   render() {
     const { casestudy } = this.state;
     return (
-      <section className="case-study pdt-132 pdb-128">
+      <section className="case-study pdt-130 pdb-130">
         <div className="container">
           <CaseStudyData casestudy={casestudy} />
         </div>

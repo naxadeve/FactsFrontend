@@ -2,108 +2,198 @@
 @media only screen and (max-width: $md-desktop)
 {
     section {
-        padding: 0 80px;
+        padding: 0 10vh;
     }
 }
 
-@media only screen and (max-width: $mb-xl)
-{
-    section {
-        padding: 0 50px;
-    }
-}
-
-@media only screen and (max-width: $mb-sm)
+@media only screen and (max-width: 992px)
 {
     section {
         padding: 0 30px;
     }
 }
-
-@media only screen and (min-width: $md-desktop)
-{
-    section {
-        padding: 0;
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
     }
 }
-
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+        
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+@media (min-width: 1366px) {
+    .container {
+        max-width: 1100px;
+    }
+}
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+@media (min-width: 1560px) {
+    .container {
+        max-width: 1300px;
+    }
+}
+.row-center{
+    -webkit-justify-content: center;
+    justify-content: center;
+}
 .headline1{
     @include typo($font-family, 600, 3.375);
-    font-size: 2.563rem;
+    font-size: 2.75rem;
     color: $color-red;
-    @media only screen and (max-width: 1560px){
-        font-size: 2.2rem;;
+    line-height: 3.5rem;
+    @media only screen and (max-width: $lg-desktop){
+        font-size: 2.25rem;
+        line-height: 2.5rem;    
     }
-    @media only screen and (max-width: 1440px){
-        font-size: 1.5rem;
+    @media only screen and (max-width: $md-desktop){
+        font-size: 1.75rem;
+        line-height: 2.25rem;
         max-width: 600px;
         margin: auto;
     }
 }
 .headline2{
     @include typo($font-family, 300, 2.813);
-    font-size: 1.65rem;
+    font-size: 2.25rem;
     color: $color-primary;
-    @media only screen and (max-width: 1560px){
-        font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 2.85rem;
+    @media only screen and (max-width: $lg-desktop){
+        font-size: 1.875rem;
+        line-height: 2.35rem;
+    }
+    @media only screen and (max-width: $md-desktop){
+        font-size: 1.525rem;
+        line-height: 2rem;
     }
 }
 .headline3{
     @include typo($font-family, 500, 2.063);
-    font-size: 1.563rem;
+    font-size: 1.63rem;
+    line-height: 2.5rem;
     color: $color-primary;
-    @media only screen and (max-width: 1560px){
-        font-size: 1.25rem;
+    @media only screen and (max-width: $lg-desktop){
+        font-size: 1.425rem;
+        line-height:2rem;
     }
+    @media only screen and (max-width: $md-desktop){
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+
 }
 .headline4{
     @include typo($font-family, 400, 1.5);
-    font-size: 1.313rem;
+    font-size: 1.425rem;
+    line-height: 1.875rem;
     color: $color-red;
     word-break: break-all;
-    @media only screen and (max-width: 1560px){
+    @media only screen and (max-width: $lg-desktop){
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+    @media only screen and (max-width: $md-desktop){
         font-size: 1rem;
+        line-height: 1.325rem;
     }
 }
 .headline5{
     @include typo($font-family, 400, 1.781);
-    font-size: 1.125rem;
+    font-size: 1.325rem;
     color: $color-primary;
-    @media only screen and (max-width: 1560px){
+    @media only screen and (max-width: $lg-desktop){
+        font-size: 1.125rem;
+    }
+    @media only screen and (max-width: $md-desktop){
         font-size: .938rem;
     }
 }
 .body-para{
     @include typo($font-family, 300, 1.406);
-    font-size: .844rem;
+    font-size: 1rem;
+    line-height: 1.75rem;
     color: $color-darkgrey;
+    @media only screen and (max-width: $lg-desktop){
+        font-size: .875rem;
+        line-height: 1.5rem;
+    }
+    @media only screen and (max-width: $md-desktop){
+        font-size: .725rem;
+        line-height: 1.125rem;
+    }
 }
 .body-para-second{
     @include typo($font-family, 300, 1.406);
-    font-size: 1.031rem;
+    font-size: 1.25rem;
     color: $color-primary;
+    @media only screen and (max-width: $lg-desktop){
+        font-size: 1rem;
+    }
+    @media only screen and (max-width: $md-desktop){
+        font-size: .785rem;
+    }
 }
 .caption{
     @include typo($font-family, 400, 1.425);
-    font-size: .844rem;
+    font-size: .938rem;
     color: $color-grey;
+    @media only screen and (max-width: $lg-desktop){
+        font-size: .785rem;
+    }
+    @media only screen and (max-width: $md-desktop){
+        font-size: .685rem;
+    }
 }
 .sec-caption{
     @include typo($font-family, 500, 1.5);
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     color: $color-red;
     text-transform: uppercase;
+    @media only screen and (max-width: $lg-desktop){
+        font-size: .938rem;
+    }
+    @media only screen and (max-width: $md-desktop){
+        font-size: .785rem;
+    }
 }
 .sub-caption{
     @include typo($font-family, 400, 1.313);
-    font-size: .703rem;
+    font-size: .875rem;
     color: $color-yellow;
-    text-transform: capitalize
+    text-transform: Uppercase;
+    @media only screen and (max-width: $lg-desktop){
+        font-size: .725rem;
+    }
+    @media only screen and (max-width: $md-desktop){
+        font-size: .585rem;
+    }
 }
 .sm-caption{
     @include typo($font-family, 300, 1.406);
-    font-size: .703rem;
+    font-size: .875rem;
     color: $color-grey;
+    @media only screen and (max-width: $lg-desktop){
+        font-size: .685rem;
+    }
+    @media only screen and (max-width: $md-desktop){
+        font-size: .625rem;
+    }
 }
 .name-caption{
     font-size: .844rem;
@@ -139,11 +229,15 @@
 }
 
 // header
-
-.pdb-100{
-    padding-bottom: 6.4rem !important;
+.pdt-100{
+    padding-top: 6.4rem !important;
+    @media only screen and (max-width: $lg-desktop){
+        padding-top: 4rem !important;
+    }
 }
-.pdb-104{
+
+.pd-100{
+    padding-top: 6.5rem !important;
     padding-bottom: 6.5rem !important;
 }
 .pdt-88{
@@ -186,9 +280,15 @@
 // resources
 .pdt-150{
     padding-top: 9.375rem !important;
+    @media only screen and (max-width: $md-desktop){
+        padding-top: 7rem !important;
+    }
 }
 .pdb-150{
     padding-bottom: 9.375rem !important;
+    @media only screen and (max-width: $md-desktop){
+        padding-bottom: 7rem !important;
+    }
 }
 
 //tesimonials
@@ -198,9 +298,13 @@
 .pdb-91{
     padding-bottom: 5.179rem !important;
 }
-.pdt-116{
-    padding-top: 7.25rem !important;
+.pdt-115{
+    padding-top:8rem !important;
 }
+.pdt-115{
+    padding-bottom: 8rem !important;
+}
+
 
 //form
 .pdt-111{
@@ -226,12 +330,21 @@
 }
 .pdb-60{
     padding-bottom: 3.75rem !important;
+    @media only screen and (max-width: $md-desktop){
+        padding-bottom: 2.75rem !important;
+    }
 }
-.pdt-132{
+.pdt-130{
     padding-top: 8.25rem !important;
+    @media only screen and (max-width: $md-desktop){
+        padding-top: 6rem !important;
+    }
 }
-.pdb-128{
-    padding-bottom: 8rem !important;
+.pdb-130{
+    padding-bottom: 8.25rem !important;
+    @media only screen and (max-width: $md-desktop){
+        padding-bottom: 6rem !important;
+    }
 }
 .pdt-92{
     padding-top: 5.75rem !important;
@@ -241,15 +354,21 @@
 }
 
 .mb-30{
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 4rem !important;
 }
 
 // R&D
 .pdt-126{
     padding-top: 7.875rem !important;
+    @media only screen and (max-width: $md-desktop){
+        padding-top: 5rem !important;
+    }
 }
 .pdb-126{
     padding-bottom: 7.875rem !important;
+    @media only screen and (max-width: $md-desktop){
+        padding-bottom: 5rem !important;
+    }
 }
 .pdt-148{
     padding-top: 9.25rem !important;
@@ -264,6 +383,9 @@
 //facts1
 .pdt-140{
     padding-top: 8.813em !important;
+    @media only screen and (max-width: $md-desktop){
+        padding-top: 8rem  !important;
+    }
 }
 .pdt-98{
     padding-top: 6.125rem !important;
@@ -272,7 +394,10 @@
     padding-bottom: 6.125rem !important;
 }
 .pdb-115{
-    padding-bottom: 7.188rem !important;
+    padding-bottom: 7rem !important;
+    @media only screen and (max-width: $md-desktop){
+        padding-bottom: 5rem !important;
+    }
 }
 .pdb-70{
     padding-bottom: 4.375rem !important;
@@ -306,6 +431,12 @@
 }
 .pdb-80 {
     padding-bottom: 5rem !important;
+    @media only screen and (max-width: $lg-desktop){
+        padding-bottom: 4rem !important;
+    }
+    @media only screen and (max-width: $md-desktop){
+        padding-bottom: 3rem !important;
+    }
 }
 // contact
 .pdt-56{
@@ -318,184 +449,6 @@
     padding-top: 1.625rem !important;
 }
 
-@media only screen and (max-width: $tab-xl){
-    .headline1{
-        font-size: 1.625rem;
-    }
-    .headline2{
-        font-size: 1.325rem;
-    }
-    .headline3{
-        font-size: 1.125rem;
-    }
-    .headline4{
-        font-size: 1.1rem;
-    }
-    .headline5{
-        font-size: .938rem;
-        line-height: 1.5 !important;
-    }
-    .body-para{
-        font-size: .725rem;
-    }
-    .body-para-second{
-        font-size: .875rem;
-    }
-    .caption{
-        font-size: .725rem;
-    }
-    .sec-caption{
-        font-size: .938rem;
-    }
-    .sub-caption{
-        font-size: .58rem;
-    }
-    .sm-caption{
-        font-size: .58rem;
-    }
-    .name-caption{
-        font-size: .685rem;
-    }
-    .org-caption{
-        font-size: .58rem;
-    }
-    .pdt-148{
-        padding-top: 6.25rem !important;
-    }
-    .pdb-110{
-        padding-bottom: 5.875rem !important;
-    }
-    .pdb-134 {
-        padding-bottom: 6rem !important;
-    }
-    .pdt-113 {
-        padding-top: 5.063rem !important;
-    }
-    .pdb-85 {
-        padding-bottom: 4.5rem !important;
-    }
-    .pdt-81 {
-        padding-top: 5rem !important;
-    }
-    .pdb-104 {
-        padding-bottom: 5.5rem !important;
-    }
-    .pdb-142 {
-        padding-bottom: 7rem !important;
-    }
-    .pdt-127 {
-        padding-top: 6.325rem !important;
-    }
-    .pdt-117 {
-        padding-top: 6rem !important;
-    }
-    .pdt-150 {
-        padding-top: 6rem !important;
-    }
-    .pdt-150 {
-        padding-top: 6rem !important;
-    }
-    .pdb-119 {
-        padding-bottom: 5.438rem !important;
-    }
-    .pdb-104 {
-        padding-bottom: 4.5rem !important;
-    }
-    .pdt-116 {
-        padding-top: 5.25rem !important;
-    }
-    .pdb-126 {
-        padding-bottom: 5rem !important;
-    }
-    .pdt-126 {
-        padding-top: 5rem !important;
-    }
-    .pdb-128 {
-        padding-bottom: 5rem !important;
-    }
-    .pdt-132 {
-        padding-top: 6.25rem !important;
-    }
-    .pdt-92 {
-        padding-top: 4rem !important;
-    }
-    .pdt-45 {
-        padding-top: 1.5rem !important;
-    }
-    .pdb-50 {
-        padding-bottom: 2rem !important;
-    }
-    .pdt-75{
-        padding-top: 3.688rem !important;
-    }
-    .pdb-75{
-        padding-bottom: 3.688rem !important;
-    }
-    .pdb-80 {
-        padding-bottom: 4rem !important;
-    }
-    .pdt-95 {
-        padding-top: 4.938rem !important;
-    }
-    .pdb-95 {
-        padding-bottom: 4.938rem !important;
-    }
-    .pdb-98 {
-        padding-bottom: 5.125rem !important;
-    }
-    .pdt-98 {
-        padding-top: 5.125rem !important;
-    }
-    .pdb-68 {
-        padding-bottom: 3.25rem !important;
-    }
-    .pdt-68 {
-        padding-top: 3.25rem !important;
-    }
-    .pdt-140{
-        padding-top: 6.813rem !important;
-    }
-}
-
-@media only screen and (max-width: $mb-sm){
-    .headline1{
-        font-size: 1.5rem;
-    }
-    .headline2{
-        font-size: 1.25rem;
-    }
-    .headline3{
-        font-size: 1.125rem;
-    }
-    .headline4{
-        font-size: 1rem;
-    }
-    .headline5{
-        font-size: .938rem !important;
-        line-height: 1.5 !important;
-    }
-    .pdb-142 {
-        padding-bottom: 6rem !important;
-    }
-    .pdt-127 {
-        padding-top: 5.325rem !important;
-    }
-    .pdb-150 {
-        padding-bottom: 5.375rem !important;
-    }
-    .pdt-150 {
-        padding-top: 5.375rem !important;
-    }
-    .pdb-50 {
-        padding-bottom: 3rem !important;
-    }
-    .pdt-111 {
-        padding-top: 4.938rem !important;
-    }
-    .pdt-140{
-        padding-top: 4.813rem !important;
-    }
-}
 /********************************/
 
 .banner-content{
@@ -535,6 +488,12 @@
     font-size: 1.375rem;
     color: $color-red;
     @include typo($font-family, 400, 1.5);
+    @media only screen and (max-width: $lg-desktop){
+        font-size: 1.25rem;
+    }
+    @media only screen and (max-width: $md-desktop){
+        font-size: 1rem;
+    }
 }
 .factsNepal-sectitle{
     font-size: 1.5rem;
@@ -543,37 +502,7 @@
 }
 
 
-/* less than 991px; */
-@media only screen and (max-width: $tab-xl){
-    .banner-content{
-        font-size: 1rem;
-    } 
-    .factsNepal-title{
-        font-size: 1.325rem;
-    }
-    .factsNepal-subtitle{
-        font-size: 1.125rem;
-    }
-    .factsNepal-sectitle{
-        font-size: 1.125rem;
-    }
-    .factsNepal-para{
-        font-size: 0.75rem;
-    }
-    .factsNepal-secpara{
-        font-size: 0.875rem;
-    }
-    .section-caption{
-        font-size: 0.875rem;
-    }
-}
 
-/* less than 376px; */
-@media only screen and (max-width: $mb-xs){
-    .banner-content{
-        font-size: 0.875rem;
-    } 
-}
 
 .show{
     display: block;
@@ -584,17 +513,14 @@
 .pdb-90{
     padding-bottom: 5.625rem !important;
 }
-.pdt-100{
-    padding-top: 6.25rem !important;
-}
 .pdt-110{
     padding-top: 6.875rem !important;
 }  
 
-h1,h3,h4{
+/* h1,h3,h4{
      line-height: 1.25 !important;
 }
-
+ */
 
 /* span */
 .span-10{
@@ -616,242 +542,4 @@ h1,h3,h4{
     font-size: 1.25rem !important;
 }
 
-/* less than 376px; */
-@media only screen and (max-width: $mb-xs){
-    /* h1 */
-   .banner-title{
-    font-size: 1.5rem !important;
-    }
-    .h3-title{
-        font-size: 1.25rem !important;
-    }
-    .publicpoll-title{
-        font-size: 1.25rem;
-    }
-    .span-12{
-        font-size: 0.475rem !important;
-    }
-    .span-14{
-        font-size: 0.625rem !important;
-    }
-    .span-16{
-        font-size: 0.75rem !important;
-    }
-    .span-18{
-        font-size: 0.875rem !important;
-    }
-    .span-22{
-        font-size: 1rem !important;
-    }
-    
-}
 
-/* less than 575px; */
-@media only screen and (max-width: $mb-sm){
-
-   /* h1 */
-   .banner-title{
-    font-size: 1.5rem !important;
-    }
-    .h3-title{
-        font-size: 1.5rem !important;
-    }
-    .publicpoll-title{
-        font-size: 1.375rem;
-    }
-    .span-12{
-        font-size: 0.625rem !important;
-    }
-    .span-14{
-        font-size: 0.625rem !important;
-    }
-    .span-16{
-        font-size: 0.75rem !important;
-    }
-    .span-18{
-        font-size: 0.875rem !important;
-    }
-    .span-22{
-        font-size: 1.125rem !important;
-    }
-    
-}
-
-/* less than 376px; */
-@media only screen and (max-width: $mb-xs){
-
-    /* h1 */
-    .banner-title{
-     font-size: 1.25rem !important;
-     }
-     .h3-title{
-         font-size: 1.25rem !important;
-     }
-     .publicpoll-title{
-         font-size: 1.125rem;
-     }
-     .span-12{
-         font-size: 0.625rem !important;
-     }
-     .span-14{
-         font-size: 0.75rem !important;
-     }
-     .span-16{
-         font-size: 0.875rem !important;
-     }
-     .span-18{
-         font-size: 1rem !important;
-     }
-     .span-22{
-         font-size: 1rem !important;
-     }
-     
- }
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-@media only screen and (min-width: $mb-lg){
-     /* h1 */
-     .banner-title{
-        font-size: 1.75rem !important;
-    }
-    .h3-title{
-        font-size: 1.5rem !important;
-    }
-    .publicpoll-title{
-        font-size: 1.375rem;
-    }
-    .span-12{
-        font-size: 0.625rem !important;
-    }
-    .span-14{
-        font-size: 0.75rem !important;
-    }
-    .span-16{
-        font-size: 0.875rem !important;
-    }
-    .span-18{
-        font-size: 1rem !important;
-    }
-    .span-22{
-        font-size: 1.125rem !important;
-    }
-    
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: $md-tab) {
-    /* h1 */
-    .banner-title{
-        font-size: 1.5rem !important;
-    }
-    .h3-title{
-        font-size: 1.625rem !important;
-    }
-    .publicpoll-title{
-        font-size: 1.625rem;
-    }
-    .span-12{
-        font-size: 0.75rem !important;
-    }
-    .span-14{
-        font-size: 0.875rem !important;
-    }
-    .span-16{
-        font-size: 1rem !important;
-    }
-    .span-18{
-        font-size: 1.125rem !important;
-    }
-    .span-22{
-        font-size: 1.125rem !important;
-    }
-    
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: $lg-tab) {
-    /* h1 */
-    .banner-title{
-        font-size: 2.5rem !important;
-    }
-    .h3-title{
-        font-size: 1.75rem !important;
-    }
-    .publicpoll-title{
-        font-size: 1.75rem;
-    }
-    .span-12{
-        font-size: 0.75rem !important;
-    }
-    .span-14{
-        font-size: 0.875rem !important;
-    }
-    .span-16{
-        font-size: 1rem !important;
-    }
-    .span-18{
-        font-size: 1.125rem !important;
-    }
-    .span-22{
-        font-size: 1.375rem !important;
-    }
-    
-}
-
-/* 1024px */
-@media only screen and (min-width: $ls-tab) {
-    /* h1 */
-    .banner-title{
-        font-size: 2.75rem !important; 
-    }
-    .h3-title{
-        font-size: 1.875rem !important;
-    }
-    .publicpoll-title{
-        font-size: 1.875rem;
-    }
-    .span-12{
-        font-size: 0.875rem !important;
-    }
-    .span-14{
-        font-size: 1rem !important;
-    }
-    .span-16{
-        font-size: 1.125rem !important;
-    }
-    .span-18{
-        font-size: 1.25rem !important;
-    }
-    .span-22{
-        font-size: 1.5rem !important;
-    }
-}    
-
-/* 1440px and up */
-@media only screen and (min-width: $md-desktop) {
-    /* h1 */
-    .banner-title{
-        font-size: 2.75rem !important;
-    }
-    .h3-title{
-        font-size: 1.875rem !important;
-    }
-    .publicpoll-title{
-        font-size: 1.875rem;
-    }
-    .span-12{
-        font-size: 0.875rem !important;
-    }
-    .span-14{
-        font-size: 1rem !important;
-    }
-    .span-16{
-        font-size: 1.125rem !important;
-    }
-    .span-18{
-        font-size: 1.25rem !important;
-    }
-    .span-22{
-        font-size: 1.5rem !important;
-    }
-}

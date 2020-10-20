@@ -61,23 +61,23 @@ class FactsPublicPoll extends Component {
 
     const fact_date = moment(factoftheday.public_date, "YYYY-MM-DD");
     return (
-      <section className="general-info pdt-81 pdb-104">
+      <section className="general-info pd-100">
+            <div className="circle red-gradient sphere1"></div>
         <div className="container">
           <div className="general-info-wrap">
-            <div className="circle red-gradient sphere1"></div>
             <div className="circle pink-gradient sphere2"></div>
             <div className="circle orange-gradient sphere3"></div>
             <div className="circle orange-gradient sphere4"></div>
             <Fade bottom duration={1100} delay={500} distance={"50px"}>
               <div className="row">
-                <div className="col-12 col-md-7" id="fact-info-div">
+                <div className="col-lg-7 col-md-12" id="fact-info-div">
                   <div
                     className="fact-info-wrap"
                     ref={ref => {
                       this.factscard = ref;
                     }}
                   >
-                    <h3 className="factsNepal-title">FACTS of the day</h3>
+                    <h3 className="headline2">FACTS of the day</h3>
                     <Link
                       className="poll-link"
                       to={{
@@ -87,14 +87,14 @@ class FactsPublicPoll extends Component {
                     >
                       <div className="fact-info">
                         <div className="row">
-                          <div className="col-12 col-md-4">
+                          <div className="col-lg-4 col-md-12">
                             <div className="fact-info-img">
                               <figure>
                                 <img src={factoftheday.image} alt="fact-img" />
                               </figure>
                             </div>
                           </div>
-                          <div className="col-12 col-md-8">
+                          <div className="col-lg-8 col-md-12">
                             <div className="fact-info-content">
                               <div className="fact-info-content-wrap">
                                 <div className="center">

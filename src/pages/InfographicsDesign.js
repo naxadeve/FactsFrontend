@@ -19,19 +19,19 @@ export default class StrategyContent extends Component {
           <div className="container">
             <div className="banner-content-wrap">
               <div className="row no-gutters">
-                <div className="col-md-6">
+                <div className="col-lg-6 col-md-12">
                   <div className="title-wrap">
                     <div className="title-center">
                       <span className="sec-caption">
                         Infographics Design
                       </span>
-                      <h3 className="factsNepal-title banner-heading">
+                      <h3 className="headline2">
                         Supplying you with relevant of information in graphic
                       </h3>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-lg-6 col-md-12">
                   <div className="image-wrap service3-img-wrap">
                     <img src="./img/Service-illustion2.svg" alt="" />
                   </div>
@@ -41,7 +41,7 @@ export default class StrategyContent extends Component {
           </div>
         </section>
 
-        <div className="info-content service-third pdt-148 pdb-110">
+        <div className="info-content service-third pdt-140 pdb-110">
           <div className="container">
             <div className="content-wrap">
               <div className="heading-wrap">

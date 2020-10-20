@@ -8,25 +8,26 @@ class MobileAppDownloads extends Component {
   render() {
     return (
       <section
-        className={`tech-section pdt-116 pdb-104 ${
+        className={`tech-section pdt-130 pdb-130 ${
           this.props.techBg ? "tech-bg" : ""
         }`}
       >
-        <img className="bg-case orange" src="./img/IMAGE-shape2.svg" />
-        <img className="bg-case pink" src="./img/IMAGE-shape4.svg" />
-        <img className="bg-case sm-pink" src="./img/IMAGE-shape1.svg" />
-        <img className="bg-case sm-orange" src="./img/IMAGE-shape3.svg" />
+        
         <div className="container">
           <div className="tech-section-wrap">
             <div className="row no-gutters">
-              <div className="col-md-6">
+              <div className="col-lg-6 col-md-12">
                 <div className="tech-section-left">
+                  <img className="bg-case orange" src="./img/IMAGE-shape2.svg" />
+                  <img className="bg-case pink" src="./img/IMAGE-shape4.svg" />
+                  <img className="bg-case sm-pink" src="./img/IMAGE-shape1.svg" />
+                  <img className="bg-case sm-orange" src="./img/IMAGE-shape3.svg" />
                   <div className="img-center">
                     <img src="./img/smartphones.png" alt="smartphones" />
                   </div>
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-lg-6 col-md-12">
                 <div className="tech-section-right">
                   <div className="tech-section-right-content">
                     <h3 className="headline2">
@@ -49,7 +50,7 @@ class MobileAppDownloads extends Component {
                         </a>
                       </div>
                     </div>
-                    <div className="btn-wrap mt-md-4">
+                    <div className="btn-wrap btn-wrap-viber">
                       <span className="caption">
                         Join Our <a href="https://invite.viber.com/?g2=AQBfeSzB7FMvFEvvkzDEn2CATbHmZBirKrHFsWPRgxS2I%2Bzi7ZcZI%2BrlsFfnw8t0&fbclid=IwAR0Mmk7lCMSoBzC68FAbXAaCAO_zEORE2Dv0vabXcVYL-ojXxKp24QEu4m8&lang=en"><img style={{"height":"33px"}} src="./img/viber-logo.png" alt="viber" /></a> Group To Get Daily Updates.
                       </span>

@@ -82,130 +82,131 @@ export default class FactsPage extends Component {
         <div>
           <div className="banner-content">
             <div className="container">
-              <div className="top-content-wrap pdb-25">
-                <div className="top-wrapper">
-                  <span className="title span-16">
-                    {singlefacts.category_title}
-                  </span>
-                  <h3 className="h3-title">{singlefacts.title}</h3>
-                  <span className="title-date span-14">
-                    <TimeAgo date={singlefacts.public_date} />
-                  </span>
-                </div>
-              </div>
-
-              <div className="mid-content-wrap pdb-25">
-                <div className="slider-carousel">
-                  <div className="slider slider-for">
-                    <Slider
-                      asNavFor={this.state.nav3}
-                      ref={slider => (this.slider1 = slider)}
-                    >
-                      <figure className="portrait-fix">
-                        <img src={singlefacts.image} alt="cereal-crop1" />
-                      </figure>
-                      {singlefacts &&
-                        singlefacts.multiple_images &&
-                        singlefacts.multiple_images.map((data, key) => {
-                          return (
-                            <li key={key} className="image-content">
-                              <figure className="portrait-fix">
-                                <img
-                                  src={data.thumbnailImageUrl}
-                                  alt="cereal-crop1"
-                                />
-                              </figure>
-                            </li>
-                          );
-                        })}
-                    </Slider>
-                  </div>
-
-                  <div className="slider slider-nav">
-                    {singlefacts &&
-                    singlefacts.multiple_images &&
-                    singlefacts.multiple_images.length == 0 ? (
-                      <Slider {...settingSlider1Img}>
-                        <div className="image-content">
-                          <figure>
-                            <img src={singlefacts.image} alt="cereal-crop1" />
-                          </figure>
-                        </div>
-                        {singlefacts
-                          ? singlefacts &&
-                            singlefacts.multiple_images &&
-                            singlefacts.multiple_images.map((data, key) => {
-                              return (
-                                <div key={key} className="image-content">
-                                  <figure>
-                                    <img
-                                      src={data.thumbnailImageUrl}
-                                      alt="cereal-crop1"
-                                    />
-                                  </figure>
-                                </div>
-                              );
-                            })
-                          : null}
-                      </Slider>
-                    ) : (
-                      <Slider {...settingSlider2Img}>
-                        <div className="image-content">
-                          <figure>
-                            <img src={singlefacts.image} alt="cereal-crop1" />
-                          </figure>
-                        </div>
-                        {singlefacts
-                          ? singlefacts &&
-                            singlefacts.multiple_images &&
-                            singlefacts.multiple_images.map((data, key) => {
-                              return (
-                                <div key={key} className="image-content">
-                                  <figure>
-                                    <img
-                                      src={data.thumbnailImageUrl}
-                                      alt="cereal-crop1"
-                                    />
-                                  </figure>
-                                </div>
-                              );
-                            })
-                          : null}
-                      </Slider>
-                    )}
-                  </div>
-
-                  <div className="slider slider-for slider-content pdt-40">
-                    <Slider
-                      asNavFor={this.state.nav1}
-                      ref={slider => (this.slider3 = slider)}
-                      slidesToShow={1}
-                      swipeToSlide={true}
-                      focusOnSelect={true}
-                      arrows={false}
-                    >
-                      <div className="image-content">
-                        <p className="factsNepal-para">
-                          {singlefacts.description}
-                        </p>
-                      </div>
-                      {singlefacts &&
-                        singlefacts.multiple_images &&
-                        singlefacts.multiple_images.map((data, key) => {
-                          return (
-                            <div key={key} className="image-content">
-                              <p className="factsNepal-para">
-                                {data.thumbnailImageDesc}
-                              </p>
-                            </div>
-                          );
-                        })}
-                    </Slider>
+              <div className="fact-border-bottom">
+                <div className="top-content-wrap pdb-25">
+                  <div className="top-wrapper">
+                    <span className="sec-caption title span-green">
+                      {singlefacts.category_title}
+                    </span>
+                    <h3 className="headline2">{singlefacts.title}</h3>
+                    <span className="title-date caption">
+                      <TimeAgo date={singlefacts.public_date} />
+                    </span>
                   </div>
                 </div>
-              </div>
 
-              <div className="bottom-content-wrap pdt-100 pdb-80">
+                <div className="mid-content-wrap pdb-25">
+                  <div className="slider-carousel">
+                    <div className="slider slider-for">
+                      <Slider
+                        asNavFor={this.state.nav3}
+                        ref={slider => (this.slider1 = slider)}
+                      >
+                        <figure className="portrait-fix">
+                          <img src={singlefacts.image} alt="cereal-crop1" />
+                        </figure>
+                        {singlefacts &&
+                          singlefacts.multiple_images &&
+                          singlefacts.multiple_images.map((data, key) => {
+                            return (
+                              <li key={key} className="image-content">
+                                <figure className="portrait-fix">
+                                  <img
+                                    src={data.thumbnailImageUrl}
+                                    alt="cereal-crop1"
+                                  />
+                                </figure>
+                              </li>
+                            );
+                          })}
+                      </Slider>
+                    </div>
+
+                    <div className="slider slider-nav">
+                      {singlefacts &&
+                      singlefacts.multiple_images &&
+                      singlefacts.multiple_images.length == 0 ? (
+                        <Slider {...settingSlider1Img}>
+                          <div className="image-content">
+                            <figure>
+                              <img src={singlefacts.image} alt="cereal-crop1" />
+                            </figure>
+                          </div>
+                          {singlefacts
+                            ? singlefacts &&
+                              singlefacts.multiple_images &&
+                              singlefacts.multiple_images.map((data, key) => {
+                                return (
+                                  <div key={key} className="image-content">
+                                    <figure>
+                                      <img
+                                        src={data.thumbnailImageUrl}
+                                        alt="cereal-crop1"
+                                      />
+                                    </figure>
+                                  </div>
+                                );
+                              })
+                            : null}
+                        </Slider>
+                      ) : (
+                        <Slider {...settingSlider2Img}>
+                          <div className="image-content">
+                            <figure>
+                              <img src={singlefacts.image} alt="cereal-crop1" />
+                            </figure>
+                          </div>
+                          {singlefacts
+                            ? singlefacts &&
+                              singlefacts.multiple_images &&
+                              singlefacts.multiple_images.map((data, key) => {
+                                return (
+                                  <div key={key} className="image-content">
+                                    <figure>
+                                      <img
+                                        src={data.thumbnailImageUrl}
+                                        alt="cereal-crop1"
+                                      />
+                                    </figure>
+                                  </div>
+                                );
+                              })
+                            : null}
+                        </Slider>
+                      )}
+                    </div>
+
+                    <div className="slider slider-for slider-content pdt-40">
+                      <Slider
+                        asNavFor={this.state.nav1}
+                        ref={slider => (this.slider3 = slider)}
+                        slidesToShow={1}
+                        swipeToSlide={true}
+                        focusOnSelect={true}
+                        arrows={false}
+                      >
+                        <div className="image-content">
+                          <p className="factsNepal-para">
+                            {singlefacts.description}
+                          </p>
+                        </div>
+                        {singlefacts &&
+                          singlefacts.multiple_images &&
+                          singlefacts.multiple_images.map((data, key) => {
+                            return (
+                              <div key={key} className="image-content">
+                                <p className="factsNepal-para">
+                                  {data.thumbnailImageDesc}
+                                </p>
+                              </div>
+                            );
+                          })}
+                      </Slider>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bottom-content-wrap pdt-100 pdb-80">
                 <div className="social-icon">
                   <span className="span-14">Shares</span>
                   <div className="social-icon-wrap">
@@ -247,6 +248,7 @@ export default class FactsPage extends Component {
                   </div>
                 </div>
               </div>
+              </div>
             </div>
           </div>
 
@@ -254,13 +256,13 @@ export default class FactsPage extends Component {
             <div className="container">
               <div className="grid-section">
                 <div className="grid-title-wrap">
-                  <h4 className="factsNepal-subtitle">Next FACTS</h4>
+                  <h4 className="headline3">Next FACTS</h4>
                 </div>
 
                 <div className="grid-facts1 pdt-40">
                   <div className="wrap">
-                    <div className="row">
-                      <div className="col-7 offset-3 col-sm-8 offset-sm-2 offset-md-0 col-md-4">
+                    <div className="row row-center">
+                      <div className="col-12 col-md-6 col-lg-4 mb-30">
                         <a href="#" className="grid-col-link">
                           <div className="grid-col" id="left">
                             <figure className="facts1-img">
@@ -271,17 +273,17 @@ export default class FactsPage extends Component {
                               />
                             </figure>
                             <div className="content-wrap">
-                              <span className="title span-12">Agriculture</span>
-                              <span className="gridcol-title span-22">
+                              <span className="title span-14">Agriculture</span>
+                              <span className="headline4">
                                 Crops Production
                               </span>
-                              <span className="title-date span-14">8h ago</span>
+                              <span className="title-date caption">8h ago</span>
                             </div>
                           </div>
                         </a>
                       </div>
 
-                      <div className="col-7 offset-3 col-sm-8 offset-sm-2 offset-md-0 col-md-4">
+                      <div className="col-12 col-md-6 col-lg-4 mb-30">
                         <a href="#" className="grid-col-link">
                           <div className="grid-col" id="mid">
                             <figure className="facts1-img">
@@ -292,20 +294,20 @@ export default class FactsPage extends Component {
                               />
                             </figure>
                             <div className="content-wrap">
-                              <span className="title span-12 span-color">
+                              <span className="title span-14 span-color">
                                 Communication
                               </span>
-                              <span className="gridcol-title span-22">
+                              <span className="headline4">
                                 Internet Usage <br />
                                 Statistics
                               </span>
-                              <span className="title-date span-14">2d ago</span>
+                              <span className="title-date caption">2d ago</span>
                             </div>
                           </div>
                         </a>
                       </div>
 
-                      <div className="col-7 offset-3 col-sm-8 offset-sm-2 offset-md-0 col-md-4">
+                      <div className="col-12  col-md-6 col-lg-4 mb-30">
                         <a href="#" className="grid-col-link">
                           <div className="grid-col" id="right">
                             <figure className="facts1-img">
@@ -316,11 +318,11 @@ export default class FactsPage extends Component {
                               />
                             </figure>
                             <div className="content-wrap">
-                              <span className="title span-12">Agriculture</span>
-                              <span className="gridcol-title span-22">
+                              <span className="title span-14">Agriculture</span>
+                              <span className="headline4">
                                 Crops Production
                               </span>
-                              <span className="title-date span-14">8h ago</span>
+                              <span className="title-date caption">8h ago</span>
                             </div>
                           </div>
                         </a>

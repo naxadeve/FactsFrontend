@@ -32,14 +32,14 @@ class Footer extends Component {
       siteapi && (<section className="form-section pdt-111 pdb-50">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-md-6">
+            <div className="col-md-12 col-lg-6">
               <div className="form-left">
                 {/* <Fade bottom duration={600} delay={400} distance={"0px"}> */}
                   <div className="circle sphere-gradient1 form-sphere"></div>
                   <div className="form-left-title">
                     <div className="circle sphere-gradient1 form-sphere"></div>
                     <h3 className="headline2">Feel Free to Contact Us !</h3>
-                    <span className="caption">
+                    <span class="body-para">
                       Fill in this form or send us an e-mail.
                     </span>
                   </div>
@@ -52,7 +52,7 @@ class Footer extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-12 offset-0 offset-md-1 col-md-5">
+            <div className="col-md-12 offset-md-0 offset-lg-1 col-lg-5">
               <div className="form-right">
                 {/* <Fade bottom duration={800} delay={500} distance={"0px"}> */}
                   <div className="form-right-title">
@@ -62,7 +62,7 @@ class Footer extends Component {
                 {/* </Fade> */}
                 {/* <Fade bottom duration={900} delay={600} distance={"0px"}> */}
                   <div className="form-address">
-                    <ul className="addr-list caption">
+                    <ul className="addr-list">
                       <li className="addr">
                         <span>
                           <img src="./img/24px (2).svg" alt="map" />
@@ -146,7 +146,7 @@ class Footer extends Component {
 
           <div className="footer">
             <div className="row">
-              <div className="col-12 col-md-6">
+              <div className="col-lg-6 col-md-12">
                 <div className="footer-left">
                   <div className="circle orange-gradient form-sphere"></div>
                   <span className="copyright sm-caption">
@@ -158,7 +158,7 @@ class Footer extends Component {
                   </span>
                 </div>
               </div>
-              <div className="col-12 offset-0 offset-md-1 col-md-5">
+              <div className="col-lg-5 offset-md-0 offset-lg-1 col-md-12">
                 <div className="footer-right">
                   <span className="site-design-title sm-caption">
                     Designed by <span className="site-design">NAXA</span>

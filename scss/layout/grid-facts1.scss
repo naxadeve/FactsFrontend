@@ -9,6 +9,7 @@
                 .grid-col{
                     height: 100%;
                     margin-bottom: 0;
+                    @include transition(all .4s ease);
                     @include border-radius-circle(5px);
                     box-shadow: 0px 1px 3px $color-box-shadow;
                     &:hover{
@@ -18,7 +19,16 @@
                         box-shadow: 0px 15px 20px $color-box-shadow;
                     }
                     figure{
+                        @include border-radius-circle(5px);
+                        border-bottom-left-radius: 0;
+                        border-bottom-right-radius: 0;
                         margin-bottom: 0 !important;
+                        img{
+                            width: 100%;
+                            @include border-radius-circle(5px);
+                            border-bottom-left-radius: 0;
+                            border-bottom-right-radius: 0;
+                        }
                     }
                     .content-wrap{
                         padding: 1.375rem 2rem;
@@ -37,7 +47,7 @@
                             &:nth-child(2){
                                 @include typo($font-family, 400, 1.5);
                                 color: $color-primary;
-                                margin: 3.75px 0 15px;
+                                margin: 3.75px 0 10px;
                                 display: -webkit-box !important;
                                 -webkit-line-clamp: 2;
                                 -webkit-box-orient: vertical;
@@ -68,11 +78,11 @@
             align-items: center;
             a{
                 @include flex;
+                align-items: center;
                 &:hover{
                     cursor: pointer;
                 }
                 .click-more{
-                    font-size: 1rem;
                     @include typo($font-family, 400, 1.5);
                     display: block;
                     text-align: center;
@@ -83,6 +93,9 @@
                     padding-left: 6px;       
                     img{
                         width: 18px;
+                        @media only screen and (max-width: $md-desktop){
+                            width: 15px;
+                        }
                     }
                 }
             }
@@ -99,9 +112,6 @@
     .page{
         .case-study{
             .next-link-wrap{
-                .click-more{
-                    font-size: .875rem;
-                }
                 figure{
                     margin-bottom: 0;
                     padding-left: 6px;       

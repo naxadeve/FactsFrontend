@@ -1,10 +1,17 @@
 .page{
     .testimonials-section{
         background: $color-footer;
+        padding: 0px;
         .testimonials-title{
+            text-align: left;
+            margin-bottom: 82px;
             h3{
                 @include typo($font-family, 300, 1.5);
                 color: $color-primary;
+                padding-top: 20px;
+                @media only screen and (max-width: $lg-tab){
+                    text-align: center;
+                }
             }
         }
     }
@@ -13,390 +20,72 @@
         justify-content: center;
         .testimonials-content-center{
             position: relative;
-            // max-width: 852px;
+            max-width: 60%;
             .para-wrap{
                 .quote-img{
                     position: absolute;
-                   top: 0px;
-                   right: 0px; 
+                    top: 0px;
+                    right: -20px;
+                    width: 30px;
+                    height: 21px;
+                    @media only screen and (max-width: $lg-desktop){
+                        right: -80px;
+                    }
+                    @media only screen and (max-width: $md-desktop){
+                        right: -60px;
+                        width: 22px;
+                         height: 14px;
+                    }
+                }
+                .factsNepal-subtitle{
+                    margin-bottom: 51px;
                 }
                 .span-testimonials-wrap{
+                    margin-bottom: 20px;
+                    @media only screen and (max-width: $md-desktop){
+                        margin-bottom: 15px;
+                    }
                     .testimonial-name{
                         @include typo($font-family, 600, 1.5);
-                        // font-size: 1rem;
+                        font-size: 0.938rem;
                         color: $color-red;
-                        // padding-bottom: 11px;
                         display: block;
+                        font-weight: 500;
+                        @media only screen and (max-width: $lg-desktop){
+                            font-size: .785rem;
+                        }
+                        @media only screen and (max-width: $md-desktop){
+                            font-size: .685rem;
+                        }
                     }
                     .testimonial-position{
                         @include typo($font-family, 600, 1.5);
-                        // font-size: 1rem;
+                        font-size: 0.75rem;
                         color: $color-grey;
+                        font-weight: 300;
+                        @media only screen and (max-width: $lg-desktop){
+                            font-size: .625rem;
+                        }
+                        @media only screen and (max-width: $md-desktop){
+                            font-size: .585rem;
+                        }
+                    }
+                }
+                .testimonial-slider-item{
+                    img{
+                        width: 120px;
+                        @media only screen and (max-width: $md-desktop){
+                            width: 100px;
+                        }
                     }
                 }
             }
             
-            .testimonial-slider{
-                // margin-top: 15px;
-                // width: 20%;
-                // margin-left: -20px;
-            }
-        }
-    }
-}
-/* less than 767px; */
-@media only screen and (max-width: $mb-xl){
-    /* testimonials */
-    .testimonials-section{
-      padding: 0px 30px;
-        .testimonials-title{
-            text-align: center;
-            margin-bottom: 40px;
-            h3{
-                padding-top: 10px;
-            }
-        }
-    }
-    .testimonials-content{
-        .testimonials-content-center{
-            max-width: 80%;
-            .para-wrap{
-                .quote-img{
-                    width: 18px;
-                    height: 16px;
-                    top: -10px !important;
-                    right: -20px !important;
-                }
-                    
-                .factsNepal-subtitle{
-                    margin-bottom: 40px;
-                }
-                .span-testimonials-wrap{
-                    .testimonial-name{
-                        font-size: 0.75rem;
-                        padding-bottom: 0px;
-                    }
-                    .testimonial-position{
-                        font-size: 0.625rem;
-                        
-                    }
-                }
-            }
-            .testimonial-slider{
-                margin-top: 15px;
-                width: 20%;
-                margin-left: -2px;
-            }
-        }
-    }
-}
-
-/* less than 575px; */
-@media only screen and (max-width: $mb-sm){
-      /* testimonials */
-      .testimonials-section{
-        padding: 0px 30px;
-        .testimonials-title{
-            text-align: center;
-            margin-bottom: 40px;
-            h3{
-                padding-top: 10px;
-            }
-        }
-    }
-    .testimonials-content{
-        .testimonials-content-center{
-           max-width: 80%;
-            .para-wrap{
-                .quote-img{
-                    width: 18px;
-                    height: 16px;
-                }
-                    
-                .factsNepal-subtitle{
-                    margin-bottom: 40px;
-                }
-                .span-testimonials-wrap{
-                    .testimonial-name{
-                        font-size: 0.75rem;
-                        padding-bottom: 0px;
-                    }
-                    .testimonial-position{
-                        font-size: 0.625rem;
-                        
-                    }
-                }
-            }
-            .testimonial-slider{
-                margin-top: 15px;
-                width: 20%;
-                margin-left: -2px;
-            }
-        }
-    }
-}
-
-/* less than 376px; */
-@media only screen and (max-width: $mb-xs){
-    /* testimonials */
-    .testimonials-content{
-        .testimonials-content-center{
-            max-width: 80%;
-            .para-wrap{
-                .quote-img{
-                    width: 18px;
-                    height: 16px;
-                }
-                .factsNepal-subtitle{
-                    margin-bottom: 40px;
-                }
-                .span-testimonials-wrap{
-                    .testimonial-name{
-                        font-size: 0.75rem;
-                        padding-bottom: 0px;
-                    }
-                    .testimonial-position{
-                        font-size: 0.625rem;
-                    }
-                }
-            }
-            .testimonial-slider{
-                margin-top: 15px;
-                width: 20%;
-                margin-left: -2px;
-            }
-        }
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
-@media only screen and (min-width: $mb-lg){
-     /* testimonials */
-     .testimonials-section{
-        padding: 0px 50px;
-        .testimonials-title{
-            text-align: center;
-            margin-bottom: 40px;
-            h3{
-                padding-top: 10px;
-            }
-        }
-    }
-    .testimonials-content{
-        .testimonials-content-center{
-           max-width: 380px;
-            .para-wrap{
-                .quote-img{
-                    position: absolute;
-                    width: 20px;
-                    height: 15px;
-                }
-                .factsNepal-subtitle{
-                    margin-bottom: 40px;
-                }
-                .span-testimonials-wrap{
-                    .testimonial-name{
-                        font-size: 0.75rem;
-                        padding-bottom: 0px;
-                    }
-                    .testimonial-position{
-                        font-size: 0.625rem;
-                    }
-                }
-            }
-            .testimonial-slider{
-                margin-top: 15px;
-                width: 20%;
-                margin-left: -12px;
-            }
-
-        }
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: $md-tab) {
-     /* testimonials */
-     .testimonials-section{
-        padding: 0px 80px;
-        .testimonials-title{
-            text-align: left;
-            margin-bottom: 50px;
-            h3{
-                // font-size: 1.875rem;
-                padding-top: 20px;
-            }
-        }
-    }
-    .testimonials-content{
-        .testimonials-content-center{
-           max-width: 450px;
-            .para-wrap{
-                .quote-img{
-                    width: 20px;
-                    height: 15px;
-                }
-                .factsNepal-subtitle{
-                    margin-bottom: 30px;
-                }
-                .span-testimonials-wrap{
-                    .testimonial-name{
-                        font-size: 0.75rem;
-                        padding-bottom: 0px;
-                    }
-                    .testimonial-position{
-                        font-size: 0.625rem;
-                    }
-                }
-            }
-            .testimonial-slider{
-                margin-top: 15px;
-                width: 20%;
-                margin-left: -12px;
-            }
-        }
-    }
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: $lg-tab) {
-       /* testimonials */
-       .testimonials-section{
-        padding: 0px 80px;
-        .testimonials-title{
-            text-align: left;
-            margin-bottom: 60px;
-            h3{
-                // font-size: 2.188rem;
-                padding-top: 20px;
-            }
-        }
-    }
-    .testimonials-content{
-        .testimonials-content-center{
-           max-width: 650px;
-            .para-wrap{
-                .quote-img{
-                    position: absolute;
-                    top: 0px;
-                    right: 0px;
-                    width: 25px;
-                    height: 20px;
-                }
-                .factsNepal-subtitle{
-                    margin-bottom: 40px;
-                }
-                .span-testimonials-wrap{
-                    .testimonial-name{
-                        font-size: 0.875rem;
-                        padding-bottom: 11px;
-                    }
-                    .testimonial-position{
-                        font-size: 0.75rem;
-                    }
-                }
-            }
-            .testimonial-slider{
-                margin-top: 15px;
-                width: 20%;
-                margin-left: -20px;
-            }
-        }
-    }
-}
-
-/* 1024px */
-@media only screen and (min-width: $ls-tab) {
-     /* testimonials */
-     .testimonials-section{
-        padding: 0px 80px;
-        .testimonials-title{
-            text-align: left;
-            margin-bottom: 82px;
-            h3{
-                // font-size: 2.5rem;
-                padding-top: 20px;
-            }
-        }
-    }
-    .testimonials-content{
-        .testimonials-content-center{
-           max-width: 620px;
-            .para-wrap{
-                .quote-img{
-                    position: absolute;
-                    top: -14px;
-                    right: 0px;
-                    width: 30px;
-                    height: 21px;
-                }
-                .factsNepal-subtitle{
-                    margin-bottom: 51px;
-                }
-                .span-testimonials-wrap{
-                    .testimonial-name{
-                        font-size: 0.875rem;
-                        padding-bottom: 11px;
-                    }
-                    .testimonial-position{
-                        font-size: 0.75rem;
-                    }
-                }
-            }
-            .testimonial-slider{
-                margin-top: 20px;
-                width: 20%;
-                margin-left: -20px;
-            }
-        }
-    }
-
-}
-
-/* 1440px and up */
-@media only screen and (min-width: $md-desktop) {
-     /* testimonials */
-     .testimonials-section{
-        padding: 0px;
-        .testimonials-title{
-            text-align: left;
-            margin-bottom: 82px;
-            h3{
-                // font-size: 2.5rem;
-                padding-top: 20px;
-            }
-        }
-    }
-    .testimonials-content{
-        .testimonials-content-center{
-           max-width: 720px;
-            .para-wrap{
-                .quote-img{
-                    position: absolute;
-                    top: 0px;
-                    right: 0px;
-                    width: 30px;
-                    height: 21px;
-                }
-                .factsNepal-subtitle{
-                    margin-bottom: 51px;
-                }
-                .span-testimonials-wrap{
-                    .testimonial-name{
-                        font-size: 0.875rem;
-                        padding-bottom: 11px;
-                    }
-                    .testimonial-position{
-                        font-size: 0.75rem;
-                    }
-                }
-            }
             .testimonial-slider{
                 margin-top: 20px;
                 width: 20%;
                 margin-left: -16px;
             }
         }
-    } 
+    }
 }

@@ -79,6 +79,10 @@
             @include flexcenter;
             align-items: center;
             .case-study-content-wrap{
+                @media only screen and (max-width: $lg-tab){
+                    @include flexvr;
+                    text-align: center;
+                }
                 .collab-group{
                     span{
                         padding-bottom: 1.406rem;
@@ -288,9 +292,6 @@
        .case-study-wrap {
             .case-study-image{
                 .figure-case-img{
-                    img{
-                        width: 280px;
-                    }
                     &.left-img-sphere{
                         .orange{
                             bottom: -2px;
@@ -387,9 +388,6 @@
             display: block !important;
             .case-study-image{
                 .figure-case-img{
-                    img{
-                        max-width: 250px;
-                    }
                     &.left-img-sphere{
                         .orange{
                             bottom: -2px;
@@ -485,9 +483,6 @@
         .case-study-wrap {
             .case-study-image{
                 .figure-case-img{
-                    img{
-                        max-width: 200px;
-                    }
                     &.left-img-sphere{
                         .orange{
                             bottom: -24px;

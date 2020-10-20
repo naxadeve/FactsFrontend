@@ -19,7 +19,7 @@ class ResearchData extends Component {
           <div className="container">
             <div className="banner-content-wrap">
               <div className="row">
-                <div className="col-md-6">
+                <div className="col-lg-6 col-md-12">
                   <div className="title-wrap">
                     <div className="title-center">
                       <span className="sec-caption">
@@ -31,7 +31,7 @@ class ResearchData extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-lg-6 col-md-12">
                   <div className="image-wrap">
                     <img src="./img/Service-illustion1.svg" alt="" />
                   </div>
@@ -41,11 +41,11 @@ class ResearchData extends Component {
           </div>
         </section>
 
-        <div className="info-content pdt-126 pdb-126">
+        <section className="info-content pdt-126 pdb-126">
           <div className="container">
             <div className="content-wrap">
               <div className="row">
-                <div className="col-md-6">
+                <div className="col-lg-6 col-md-12">
                   <div className="info-heading">
                     <div className="info-center">
                       <h3 className="headline3">
@@ -62,7 +62,7 @@ class ResearchData extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-lg-6 col-md-12">
                   <div className="info-lists">
                     <ul className="info-list-wrap body-para-second">
                       <li className="list-item">Quantitative Research</li>
@@ -90,7 +90,7 @@ class ResearchData extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </section>
         <Testimonials />
         {/* <Footer /> */}
       </Fragment>

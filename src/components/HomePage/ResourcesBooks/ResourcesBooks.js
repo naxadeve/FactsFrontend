@@ -44,11 +44,11 @@ class ResourcesBooks extends Component {
             </div>
             <div className="resources-grid-content">
               <div className="grid-container">
-                <div className="row">
+                <div className="row row-center">
                   {resources &&
                     resources.map(data => {
                       return (
-                        <div className="col-12 col-md-4">
+                        <div className="col-lg-4 col-md-12">
                           <div className="grid-col resources-grid-lft">
                             <div className="grid-content-wrap">
                               <div className="grid-image">

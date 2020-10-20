@@ -35,12 +35,12 @@ class NavBar extends Component {
         {/* {console.log(this.state.btnclick)} */}
 
         <header
-          className={`site-header pdb-100 ${headerBg ? "no-bg" : ""} ${
+          className={`site-header pdb-80 ${headerBg ? "no-bg" : ""} ${
             this.props.bgGrey ? "bg-grey" : ""
           }`}
         >
           <div ref={(ref) => (this._div = ref)} className="wrap">
-            <div className="container full-width-container">
+            <div className="container">
               <div className="header-top">
                 <div className="logo">
                   <Link

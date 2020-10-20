@@ -19,7 +19,7 @@ export default class StrategyContent extends Component {
           <div className="container">
             <div className="banner-content-wrap">
               <div className="row no-gutters">
-                <div className="col-md-5 order-md-2">
+                <div className="col-lg-5 col-md-12 order-lg-2 order-md-1">
                   <div className="title-wrap">
                     <div className="title-center">
                       <span className="sec-caption">
@@ -31,7 +31,7 @@ export default class StrategyContent extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-7 order-md-1">
+                <div className="col-lg-7 col-md-12 order-lg-1 order-md-2">
                   <div className="image-wrap">
                     <img src="./img/Service-illustion3.svg" alt="" />
                   </div>
@@ -44,7 +44,7 @@ export default class StrategyContent extends Component {
           <div className="container">
             <div className="content-wrap">
               <div className="row no-gutters">
-                <div className="col-md-6">
+                <div className="col-lg-6 col-md-12">
                   <div className="info-heading">
                     <div className="info-center">
                       <h3 className="headline3">
@@ -64,7 +64,7 @@ export default class StrategyContent extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-lg-6 col-md-12">
                   <div className="lists-heading">
                     <ul className="list-wrap body-para-second">
                       <li className="list-item ">

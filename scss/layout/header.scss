@@ -8,7 +8,7 @@
     header{
         position: relative;
         z-index: 9999;
-        background: $color-stop1;
+        background: rgba($color-pink, .37);
         &.is-fixed{
             position: absolute;
             background: transparent;
@@ -16,8 +16,7 @@
         }
         .wrap{
             padding-top: 30px;
-            .full-width-container{
-                .header-top{
+            .header-top{
                     @include flexjust;
                     .navitems{
                         .menu-lists{
@@ -63,6 +62,8 @@
                                     }
                                 }
                                 .grid-content{
+                                    -webkit-animation: opacity .4s ease-in-out;
+                                    animation: opacity .4s ease-in-out;
                                     display: none;
                                     position: absolute;
                                     min-width: 700px;
@@ -155,7 +156,6 @@
                             }
                         }
                     }
-                }
             }
         }
     }
@@ -169,9 +169,7 @@
                 display: flex;
                 justify-content: center;
                 .title-wrap{
-                    top: 16vh;
                     position: relative;
-                    max-width: 300px;
                     .banner-title{
                         @include typo($font-family, 600, 1.5);
                         color: $color-red;
@@ -189,8 +187,13 @@
                 width: 600px;
                 .title{
                     @include typo($font-family, 400, 1.5);
-                    color: $color-limegreen;
                     letter-spacing: 2px;
+                    &.span-green{
+                        color: $color-limegreen;
+                    }
+                    &.span-blue{
+                        color: $color-blue;
+                    }
                 }
                 .h3-title{
                     @include typo($font-family, 300, 1.5);
@@ -240,6 +243,7 @@
                     figure{
                         img{
                             margin: auto;
+                            @include border-radius-circle(20px);
                         }
                     }
                     .image-content{
@@ -297,7 +301,7 @@
         .bottom-content-wrap{
             margin: 0 auto;
             max-width: 700px;
-            @include border-bottom(1px, solid, $color-borderbtm);
+            // @include border-bottom(1px, solid, $color-borderbtm);
             .span-18{
             display: block;
             color: $logo-bg;
@@ -349,6 +353,9 @@
                     }
                 }
             }
+        }
+        .fact-border-bottom {
+            @include border-bottom(1px, solid, $color-borderbtm);
         }
     }
 }
@@ -405,7 +412,7 @@
     /* header */
         header{
             .wrap{
-                .full-width-container{
+                // .full-width-container{
                     padding-right: 0px;
                     padding-left: 0px;
                     max-width: 100%;
@@ -470,7 +477,7 @@
                             }
                         }
                     }
-                }
+                // }
             }
         }
         .banner{
@@ -478,11 +485,6 @@
             .banner-wrap{
                 img {
                     max-width: 100%;
-                }
-                .title-block{
-                    .title-wrap{
-                        max-width: 100%;
-                    }
                 }
             }
         }
@@ -589,7 +591,7 @@
         header{
             padding-bottom: 20px;
             .wrap{
-                .full-width-container{
+                // .full-width-container{
                     .header-top{
                         .toggle-button{
                             top: 34px;
@@ -640,7 +642,7 @@
                             }
                         }
                     }
-                }
+                // }
             }
         }
         .banner-content{
@@ -680,16 +682,13 @@
         header{
             padding: 0px;
             .wrap{
-                .full-width-container{
-                    max-width: 100%;
-                    padding-right: 0px;
-                    padding-left: 0px;
+                padding-top: 20px;
                     .header-top{
                         flex-direction: column;
                         .logo{
                                 img{
                                     margin-left: 50px;
-                                    max-width: 100px;
+                                    max-width: 90px;
                                 }
                         }
                         .navitems{
@@ -743,7 +742,6 @@
                     .toggle-button{
                         display: block;
                     }
-                }
             }
         }
         
@@ -753,11 +751,6 @@
                 padding-bottom: 20px;
                 img {
                     max-width: 450px;
-                }
-                .title-block{
-                    .title-wrap{
-                        max-width: 100%;
-                    }
                 }
             }
         }
@@ -828,10 +821,6 @@
         header{
             padding: 0px 80px;
             .wrap{
-                .full-width-container{
-                    max-width: 720px;
-                    padding-right: 15px;
-                    padding-left: 15px;
                     .header-top{
                         flex-direction: row; 
                         .logo{
@@ -894,7 +883,6 @@
                             display: none;
                         }
                     }
-                }
             }
         }
         .banner{
@@ -902,11 +890,6 @@
             .banner-wrap{
                 img {
                     max-width: 550px;
-                }
-                .title-block{
-                    .title-wrap{
-                        max-width: 580px;
-                    }
                 }
             }
         }
@@ -978,10 +961,6 @@
         // header
         header{
             .wrap{
-                .full-width-container{
-                    max-width: 960px;
-                    padding-right: 15px;
-                    padding-left: 15px;
                     .header-top{
                         flex-direction: row; 
                         .navitems{
@@ -1036,7 +1015,6 @@
                             display: none;
                         }
                     }
-                }
             }
         }
         .banner{
@@ -1044,11 +1022,6 @@
                 .banner-wrap{
                 img {
                     max-width: 600px;
-                }
-                .title-block{
-                    .title-wrap{
-                        max-width: 630px;
-                    }
                 }
             }
         }
@@ -1113,10 +1086,6 @@
     .page{
         header{
             .wrap{
-                .full-width-container{
-                    max-width: 1140px;
-                    padding-right: 15px;
-                    padding-left: 15px;
                     .header-top{
                         flex-direction: row;
                         .navitems{
@@ -1130,9 +1099,6 @@
                                 .menu-items{
                                     margin-left: 10px;
                                     padding: 0px;
-                                    a{
-                                        font-size: 0.875rem;
-                                    }
                                 }
                                 /*-- dropdown --*/
                                 .dropdown-grid{
@@ -1172,7 +1138,6 @@
                             display: none;
                         }
                     }
-                }
             }
         }
         .banner{
@@ -1180,12 +1145,6 @@
             .banner-wrap{
                 img {
                     max-width: 680px; 
-                }
-                .title-block{
-                    .title-wrap{
-                        
-                        max-width: 850px;
-                    }
                 }
             }
         }
@@ -1257,10 +1216,6 @@
         header{
             padding: 0;
             .wrap{
-                .full-width-container{
-                    max-width: 1140px;
-                    padding-right: 15px;
-                    padding-left: 15px;
                     .header-top{
                         flex-direction: row;
                         .logo{
@@ -1321,19 +1276,12 @@
                             display: none;
                         }
                     }
-                }
             }
         }
         .banner{  
             .banner-wrap{
                 img {
                     max-width: 800px;
-                }
-                .title-block{
-                    .title-wrap{
-                        top: 5vh;
-                        max-width: 900px;
-                    }
                 }
             }
         }
